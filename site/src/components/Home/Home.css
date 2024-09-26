@@ -1,0 +1,35 @@
+.row{
+    width: 10em;
+    display: contents;
+}
+
+.btn-primary{
+    background-color: #D9D9D9;
+}
+
+.box-e{
+    display: flex;
+    padding-top: 2em;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ensinoRemoto{
+    /* padding-top: 7em; */
+    font-family: Itim;
+    display: inline-block;
+    text-align: center;
+    width: 9em;
+}
+
+.ensinoInstitucional{
+    display: inline-block;
+    font-family: Itim;
+    text-align: center;
+    width: 9em;
+}
+
+.separador{
+    padding-top: 50px;
+}
