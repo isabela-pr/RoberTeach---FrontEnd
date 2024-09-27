@@ -1,0 +1,47 @@
+.linha {
+  margin-top: -0.5em;
+}
+
+h6 {
+  font-family: Itim;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.Perfil {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 2.5em;
+  margin-top: 2em;
+}
+
+.Perfil p {
+  font-family: Itim;
+}
+
+.Sair {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  font-family: Karla;
+}
+
+.Sair2 {
+  width: 180px;
+}
+
+.btn-primary {
+  border: 3px solid;
+  border-color: #9747ff;
+  background-color: #ce82ff;
+  height: 40px;
+  border-radius: 50px;
+  transition: box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ce82ff;
+  box-shadow: 0 4px 10px rgba(151, 74, 255, 10);
+  transform: translateY(2px);
+}

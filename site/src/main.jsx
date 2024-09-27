@@ -12,6 +12,7 @@ import Header from "./components/Header/Header.jsx";
 import EnsinoInstitucional from "./components/EnsinoInstitucional/EnsinoInstitucional.jsx";
 import CriarConta from "./components/CriarConta/CriarConta.jsx";
 import EntrarConta from "./components/EntrarConta/EntrarConta.jsx";
+import Perfis from "./components/Perfis/Perfis.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,11 +21,12 @@ const router = createBrowserRouter([
     errorElement: <h1>Erro</h1>,
     children: [
       { path: "/", element: <Home /> },
+      { path: "Header", element: <Header /> },
       { path: "EnsinoRemoto", element: <EnsinoRemoto /> },
       { path: "EnsinoInstitucional", element: <EnsinoInstitucional /> },
-      { path: "CriarConta", element: <CriarConta/> },
-      { path: "EntrarConta", element: <EntrarConta/> },
-      { path: "Header", element: <Header /> },
+      { path: "CriarConta", element: <CriarConta /> },
+      { path: "EntrarConta", element: <EntrarConta /> },
+      { path: "Perfis", element: <Perfis /> },
     ],
   },
 ]);
