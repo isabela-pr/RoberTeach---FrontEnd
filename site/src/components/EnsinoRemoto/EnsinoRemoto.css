@@ -1,0 +1,83 @@
+.Robertofalando {
+  height: 80vh;
+}
+
+.fala-R {
+  height: 70px;
+  background-color: #fff;
+  border: 3px solid;
+  border-color: #616161;
+  border-radius: 10px 10px 10px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  width: 50%;
+  padding: 5px;
+}
+
+.fala-R p {
+  font-family: Itim;
+  display: flex;
+  text-align: center;
+  font-size: smaller;
+}
+
+.login {
+  font-family: Karla;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.CriarConta {
+  width: 239px;
+}
+
+.EntrarConta {
+  width: 239px;
+}
+
+.CriarConta p {
+  color: #ce82ff;
+}
+
+.EntrarConta p {
+  color: #fff;
+}
+
+.btn-primary-e {
+  border: 3px solid;
+  border-color: #9747ff;
+  background-color: #ce82ff;
+  width: 239px;
+  height: 40px;
+  border-radius: 50px;
+  transition: box-shadow 0.3s;
+}
+
+.btn-primary-e:hover {
+  background-color: #ce82ff;
+  box-shadow: 0 4px 10px rgba(151, 74, 255, 10);
+  transform: translateY(2px);
+}
+
+.btn-primary-c {
+  background-color: #e5e5e5;
+  border: 3px solid;
+  border-color: #d2d2d2;
+  width: 239px;
+  height: 40px;
+  border-radius: 50px;
+  transition: box-shadow 0.3s;
+}
+
+.btn-primary-c:hover {
+  background-color: #e5e5e5;
+  box-shadow: 0 4px 10px rgba(210, 210, 210, 1);
+  transform: translateY(2px);
+}

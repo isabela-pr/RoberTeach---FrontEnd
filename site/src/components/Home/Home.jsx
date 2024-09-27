@@ -11,6 +11,7 @@ import SetinhaVoltar from "../../assets/setinhaVoltar.svg";
 const Home = () => {
   return (
     <>
+      <Header />
       <Body />
       <div className="row">
         <nav className="gap-4 box-e d-flex flex-column d-md-block col col-md justify-content-center rounded-3">
