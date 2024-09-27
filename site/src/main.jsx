@@ -8,7 +8,6 @@ import "./index.css";
 import App from "./App.jsx";
 import Home from "./components/Home/Home.jsx";
 import EnsinoRemoto from "./components/EnsinoRemoto/EnsinoRemoto.jsx";
-import Teste from "./components/teste.jsx";
 import Header from "./components/Header/Header.jsx";
 import EnsinoInstitucional from "./components/EnsinoInstitucional/EnsinoInstitucional.jsx";
 
