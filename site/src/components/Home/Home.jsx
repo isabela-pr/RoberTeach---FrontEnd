@@ -6,6 +6,7 @@ import Body from "../Body/Body";
 import ensinoRemoto from "../../assets/EnsinoRemoto.png";
 import EnsinoInstitucional from "../../assets/EnsinoInstitucional.png";
 import Separador from "../../assets/linha.svg";
+import SetinhaVoltar from "../../assets/setinhaVoltar.svg";
 
 const Home = () => {
   return (
@@ -30,6 +31,10 @@ const Home = () => {
         </nav>
 
         <img src={Separador} alt="" className="separador" />
+        <div className="rodape d-flex justify-content-center align-items-center pt-4">
+          <img src={SetinhaVoltar} alt="" className="setinha" />
+          <button>prosseguir</button>
+        </div>
       </div>
     </>
   );
