@@ -1,6 +1,5 @@
 import React from "react";
 import "./EntrarConta.css";
-import Header from "../Header/Header";
 import RoberTeach from "../../assets/RT-Maior.png";
 import { Link } from "react-router-dom";
 import rodape from "../../assets/rodapeApp.png";
@@ -39,7 +38,7 @@ const EntrarConta = () => {
               Lembre-se de mim
             </label>
           </div>
-          <Link className="EntrarP btn btn-primary" to={"../Perfis"}>
+          <Link className="EntrarP btn btn-primary-E" to={"../Perfis"}>
             <p>Entrar</p>
           </Link>
         </form>

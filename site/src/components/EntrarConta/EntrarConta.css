@@ -59,10 +59,6 @@ input {
   font-family: Khula;
 }
 
-.btn-primary {
-  background-color: #ce82ff;
-}
-
 .EntrarP {
   display: flex;
   justify-content: center;
@@ -73,6 +69,22 @@ input {
 .EntrarP p {
   font-family: Khula;
   font-size: 25px;
+}
+
+.btn-primary-E{
+  color: #fff;
+  border-color: #9747ff;
+  background-color: #ce82ff;
+  width: 239px;
+  height: 40px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+}
+
+.btn-primary-E:hover{
+  background-color: #ce82ff;
+  box-shadow: 0 4px 10px rgba(151, 74, 255, 10);
+  transform: translateY(2px);
 }
 
 .footer {

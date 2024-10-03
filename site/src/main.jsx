@@ -13,6 +13,8 @@ import EnsinoInstitucional from "./components/EnsinoInstitucional/EnsinoInstituc
 import CriarConta from "./components/CriarConta/CriarConta.jsx";
 import EntrarConta from "./components/EntrarConta/EntrarConta.jsx";
 import Perfis from "./components/Perfis/Perfis.jsx";
+import Intro from "./components/Intro/Intro.jsx";
+import Beneficios from "./components/Beneficios/Beneficios.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,13 +22,15 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <h1>Erro</h1>,
     children: [
-      { path: "/", element: <Home /> },
+      { path: "/", element: <Intro /> },
+      { path: "Home", element: <Home /> },
       { path: "Header", element: <Header /> },
       { path: "EnsinoRemoto", element: <EnsinoRemoto /> },
       { path: "EnsinoInstitucional", element: <EnsinoInstitucional /> },
       { path: "CriarConta", element: <CriarConta /> },
       { path: "EntrarConta", element: <EntrarConta /> },
       { path: "Perfis", element: <Perfis /> },
+      { path: "Beneficios", element: <Beneficios /> },
     ],
   },
 ]);

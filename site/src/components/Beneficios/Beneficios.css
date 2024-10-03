@@ -1,0 +1,84 @@
+.Sequencia {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  gap: 1em;
+}
+
+.container-B {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4em;
+  padding-right: 2em;
+}
+
+.Robertofalando {
+  height: 80vh;
+}
+
+.box {
+  width: 50%;
+  padding: 5px;
+}
+
+.fala-R p {
+  font-family: Itim;
+  display: flex;
+  text-align: center;
+  font-size: smaller;
+}
+
+.fala-R {
+  height: 70px;
+  background-color: #fff;
+  border: 3px solid;
+  border-color: #616161;
+  border-radius: 10px 10px 10px 0;
+}
+
+.Beneficios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.Benef{
+    font-family: Itim;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.Benef img{
+    width: 45px;
+    height: 45px;
+}
+
+.FalaBene{
+    border-radius: 18px;
+    background-color: #E1E1E1;
+    text-align: center;
+    width: 235px;
+    height: 50px;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+}
+
+.FalaBeneAbajur{
+    border-radius: 18px;
+    background-color: #E1E1E1;
+    text-align: center;
+    width: 235px;
+    height: 50px;
+}
+
+.FalaBeneAbajur p{
+    width: 232px;
+}

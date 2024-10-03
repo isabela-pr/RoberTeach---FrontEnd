@@ -17,7 +17,7 @@ const Home = () => {
         <nav className="gap-4 box-e d-flex flex-column d-md-block col col-md justify-content-center rounded-3">
           <Link
             className="ensinoRemoto btn bg-light text-primary-emphasis border"
-            to={"EnsinoRemoto"}
+            to={"../EnsinoRemoto"}
           >
             <img src={ensinoRemoto} alt="" />
             Ensino Remoto
