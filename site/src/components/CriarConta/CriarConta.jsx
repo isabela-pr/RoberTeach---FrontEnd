@@ -38,7 +38,7 @@ const CriarConta = () => {
               type="password"
               id="password"
               className="input-field"
-              placeholder="Código da Turma"
+              placeholder="Senha"
             />
           </div>
 

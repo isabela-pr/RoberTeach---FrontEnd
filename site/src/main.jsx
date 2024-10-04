@@ -16,6 +16,7 @@ import Perfis from "./components/Perfis/Perfis.jsx";
 import Intro from "./components/Intro/Intro.jsx";
 import Beneficios from "./components/Beneficios/Beneficios.jsx";
 import Atividades from "./components/Atividades/Atividades.jsx";
+import AreasMat from "./components/AreasMat/AreasMat.jsx";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
       { path: "Perfis", element: <Perfis /> },
       { path: "Beneficios", element: <Beneficios /> },
       { path: "Atividades", element: <Atividades /> },
+      { path: "AreasMat", element: <AreasMat /> },
     ],
   },
 ]);

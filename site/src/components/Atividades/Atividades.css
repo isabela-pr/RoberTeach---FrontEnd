@@ -1,0 +1,50 @@
+.Separador {
+  margin-bottom: 1em;
+}
+
+.Aprender {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+
+.Aprender p {
+  color: rgba(0, 0, 0, 0.29);
+  font-family: Itim;
+}
+
+.Atividades {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5em;
+  margin-top: 2em;
+}
+
+.LP {
+  display: flex;
+  gap: 1em;
+}
+
+.customização-button {
+  font-size: 10px;
+  font-family: Itim;
+  background-color: white;
+  width: 209px;
+  height: 50px;
+  border: 2px solid #e0e0e0;
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.customização-button:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.customização-button:focus {
+  outline: none;
+}
