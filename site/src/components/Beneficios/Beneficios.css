@@ -30,7 +30,7 @@
 }
 
 .fala-R {
-  height: 70px;
+  height: 60px;
   background-color: #fff;
   border: 3px solid;
   border-color: #616161;
@@ -46,39 +46,148 @@
   gap: 1.5em;
 }
 
-.Benef{
-    font-family: Itim;
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
+.Benef {
+  font-family: Itim;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
 }
 
-.Benef img{
-    width: 45px;
-    height: 45px;
+.Benef img {
+  width: 45px;
+  height: 45px;
 }
 
-.FalaBene{
-    border-radius: 18px;
-    background-color: #E1E1E1;
-    text-align: center;
-    width: 235px;
-    height: 50px;
+.FalaBene {
+  border-radius: 28px;
+  background-color: #e1e1e1;
+  text-align: center;
+  width: 235px;
+  height: 50px;
+  box-shadow: 0 4px 6px 0 rgba(217, 217, 217, 0.17);
 }
 
-.image{
-    display: flex;
-    align-items: center;
+.image {
+  display: flex;
+  align-items: center;
 }
 
-.FalaBeneAbajur{
-    border-radius: 18px;
-    background-color: #E1E1E1;
-    text-align: center;
-    width: 235px;
-    height: 50px;
+.FalaBeneAbajur {
+  border-radius: 28px;
+  background-color: #e1e1e1;
+  text-align: center;
+  width: 235px;
+  height: 50px;
+  box-shadow: 0 4px 6px 0 rgba(217, 217, 217, 0.17);
 }
 
-.FalaBeneAbajur p{
-    width: 232px;
+.FalaBeneAbajur p {
+  width: 232px;
+}
+
+.FalaBeneRelogio {
+  border-radius: 28px;
+  background-color: #e1e1e1;
+  text-align: center;
+  width: 240px;
+  height: 100px;
+  box-shadow: 0 4px 6px 0 rgba(217, 217, 217, 0.17);
+}
+
+.FalaBeneRelogio p {
+  width: 240px;
+}
+
+.FalaBeneDedo {
+  border-radius: 28px;
+  background-color: #e1e1e1;
+  text-align: center;
+  width: 240px;
+  height: 50px;
+  box-shadow: 0 4px 6px 0 rgba(217, 217, 217, 0.17);
+}
+
+.FalaBeneDedo p {
+  width: 232px;
+}
+
+.FalaBeneDinheiro {
+  border-radius: 28px;
+  background-color: #e1e1e1;
+  text-align: center;
+  width: 240px;
+  height: 50px;
+  box-shadow: 0 4px 6px 0 rgba(217, 217, 217, 0.17);
+}
+
+.FalaBeneDinheiro p {
+  width: 232px;
+}
+
+.separador {
+  padding-top: 50px;
+}
+
+.setinha {
+  width: 40px;
+  color: #ce82ff;
+  cursor: pointer;
+}
+
+button {
+  text-transform: uppercase;
+  font-family: Karla;
+  font-size: 13px;
+  font-weight: 750;
+  border-radius: 14px;
+  border: 2px solid #9747ff;
+  background-color: #ce82ff;
+  color: #fff;
+  height: 38px;
+  width: 96px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+button:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(2px);
+}
+
+.rodape {
+  gap: 12em;
+}
+
+.btn-primary-A {
+  color: #fff;
+  border: 2px solid #9747ff;
+  background-color: #ce82ff;
+  width: 96px;
+  height: 40px;
+  border-radius: 14px;
+  text-transform: uppercase;
+  font-family: Karla;
+  font-size: 13px;
+  font-weight: 750;
+  transition: box-shadow 0.3s;
+}
+
+.btn-primary-A:hover {
+  background-color: #ce82ff;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transform: translateY(2px);
+}
+
+.EntrarAt {
+  display: flex;
+  justify-content: center;
+  gap: 12em;
+  margin-top: 2em;
+}
+
+.Paragrafo {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
 }

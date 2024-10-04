@@ -15,6 +15,7 @@ import EntrarConta from "./components/EntrarConta/EntrarConta.jsx";
 import Perfis from "./components/Perfis/Perfis.jsx";
 import Intro from "./components/Intro/Intro.jsx";
 import Beneficios from "./components/Beneficios/Beneficios.jsx";
+import Atividades from "./components/Atividades/Atividades.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,7 @@ const router = createBrowserRouter([
       { path: "EntrarConta", element: <EntrarConta /> },
       { path: "Perfis", element: <Perfis /> },
       { path: "Beneficios", element: <Beneficios /> },
+      { path: "Atividades", element: <Atividades /> },
     ],
   },
 ]);
