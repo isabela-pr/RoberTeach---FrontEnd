@@ -9,17 +9,3 @@
     padding: 10px;
 }
 
-.fala-roberto{
-    width: 170px;
-    height: 75px;
-    background-color: #fff;
-    border: 3px solid;
-    border-color: #616161;
-    border-radius: 10px 10px 10px 0;
-}
-
-.fala-roberto p{
-    font-family: Itim;
-    display: flex;
-    text-align: center;
-}

@@ -11,7 +11,7 @@
 }
 
 .login-form {
-  background-color: #fff;
+  background-color: var(--loginForm);
   padding: 20px;
   border-radius: 10px;
 }
@@ -20,27 +20,8 @@
   margin-bottom: 25px;
 }
 
-label {
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
-}
 
-.input-field {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 10px;
-  border: none;
-  background-color: #f6e8ff;
-  outline: none;
-  font-size: 16px;
-  color: #333;
-}
 
-.input-field::placeholder {
-  color: #bbb;
-}
 
 .remember-me {
   display: flex;
@@ -51,13 +32,8 @@ label {
   margin-right: 5px;
 }
 
-label {
-  font-family: Khula;
-}
 
-input {
-  font-family: Khula;
-}
+
 
 .EntrarP {
   display: flex;

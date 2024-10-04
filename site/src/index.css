@@ -1,3 +1,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+.Robertofalando {
+  height: 50vh;
+}
+
+label{
+    color: var(--label);
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--bgInput);
+    outline: none;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .input-field::placeholder {
+    color: #bbb;
+  }
+
+input{
+    font-family: Khula;
+}
+
+.fala-roberto{
+    width: 170px;
+    height: 75px;
+    background-color: var(--FalaRob);
+    border: 3px solid;
+    border-color: #616161;
+    border-radius: 10px 10px 10px 0;
+}
+
+.fala-roberto p{
+    font-family: Itim;
+    display: flex;
+    text-align: center;
+    color: var(--FalaRobP);
+}
+
+
+:root {
+  --bgColor: white;
+  --ColorBtn: white;
+  --FalaRob: white;
+  --FalaRobP: #000;
+  --entrarContaP: #fff;
+  --bgCriarConta: #E5E5E5;
+  --criarContaStroke: #d2d2d2;
+  --loginForm: #fff;
+  --label: #000;
+  --bgInput: #F5E6FF;
+  --btnColorC: #fff
+}
+
+@media (prefers-color-scheme= dark) {
+  :root {
+    --bgColor: #151323;
+    --ColorBtn: black;
+    --FalaRob: #151323;
+    --FalaRobP: #fff;
+    --entrarContaP: #000;
+    --bgCriarConta: #6b6a72;
+    --criarContaStroke: #404040;
+    --loginForm: #151323;
+    --label: #fff;
+    --bgInput: #3A294F;
+    --btnColorC: #151323
+  }
+}

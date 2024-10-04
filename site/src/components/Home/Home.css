@@ -1,4 +1,4 @@
-.row {
+#row {
   width: 10em;
   display: contents;
 }
@@ -74,4 +74,8 @@ button:hover {
 
 .rodape {
   gap: 12em;
+}
+
+body {
+  background: var(--bgColor);
 }
