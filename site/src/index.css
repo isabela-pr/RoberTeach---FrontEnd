@@ -6,46 +6,51 @@
   height: 50vh;
 }
 
-label{
-    color: var(--label);
+label {
+  color: var(--label);
 }
 
 .input-field {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 10px;
-    border: none;
-    background-color: var(--bgInput);
-    outline: none;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  .input-field::placeholder {
-    color: #bbb;
-  }
-
-input{
-    font-family: Khula;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--bgInput);
+  outline: none;
+  font-size: 16px;
+  color: #333;
 }
 
-.fala-roberto{
-    width: 170px;
-    height: 75px;
-    background-color: var(--FalaRob);
-    border: 3px solid;
-    border-color: #616161;
-    border-radius: 10px 10px 10px 0;
+.input-field::placeholder {
+  color: #bbb;
 }
 
-.fala-roberto p{
-    font-family: Itim;
-    display: flex;
-    text-align: center;
-    color: var(--FalaRobP);
+input {
+  font-family: Khula;
 }
 
+.fala-roberto {
+  width: 170px;
+  height: 75px;
+  background-color: var(--FalaRob);
+  border: 3px solid;
+  border-color: #616161;
+  border-radius: 10px 10px 10px 0;
+}
+
+.fala-roberto p {
+  font-family: Itim;
+  display: flex;
+  text-align: center;
+  color: var(--FalaRobP);
+}
+
+.fala-R {
+  border: 2px solid #616161;
+  border-radius: 10px 10px 10px 0;
+  height: 4em;
+}
 
 :root {
   --bgColor: white;
@@ -53,12 +58,13 @@ input{
   --FalaRob: white;
   --FalaRobP: #000;
   --entrarContaP: #fff;
-  --bgCriarConta: #E5E5E5;
+  --bgCriarConta: #e5e5e5;
   --criarContaStroke: #d2d2d2;
   --loginForm: #fff;
   --label: #000;
-  --bgInput: #F5E6FF;
-  --btnColorC: #fff
+  --bgInput: #f5e6ff;
+  --btnColorC: #fff;
+  --iconJournal: #000;
 }
 
 @media (prefers-color-scheme= dark) {
@@ -72,7 +78,8 @@ input{
     --criarContaStroke: #404040;
     --loginForm: #151323;
     --label: #fff;
-    --bgInput: #3A294F;
-    --btnColorC: #151323
+    --bgInput: #3a294f;
+    --btnColorC: #151323;
+    --iconJournal: #fff;
   }
 }
