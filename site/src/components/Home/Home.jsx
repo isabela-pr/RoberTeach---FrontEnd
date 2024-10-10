@@ -70,7 +70,7 @@ const Home = () => {
             </Link>
             <Link
               className="ensinoInstitucional btn bg-light text-primary-emphasis border"
-              to={"EnsinoInstitucional"}
+              to={"../EnsinoInstitucional"}
             >
               <img src={EnsinoInstitucional} alt="" />
               Ensino Institucional

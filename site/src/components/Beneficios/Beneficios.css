@@ -13,13 +13,10 @@
   padding-right: 2em;
 }
 
-
 .box {
   width: 50%;
   padding: 5px;
 }
-
-
 
 .Beneficios {
   display: flex;
@@ -44,11 +41,15 @@
 
 .FalaBene {
   border-radius: 28px;
-  background-color: #e1e1e1;
+  background-color: var(--infoB);
   text-align: center;
   width: 235px;
   height: 50px;
   box-shadow: 0 4px 6px 0 rgba(217, 217, 217, 0.17);
+}
+
+.FalaBene p {
+  color: var(--falaP);
 }
 
 .image {
@@ -58,7 +59,7 @@
 
 .FalaBeneAbajur {
   border-radius: 28px;
-  background-color: #e1e1e1;
+  background-color: var(--infoB);
   text-align: center;
   width: 235px;
   height: 50px;
@@ -67,11 +68,12 @@
 
 .FalaBeneAbajur p {
   width: 232px;
+  color: var(--falaP);
 }
 
 .FalaBeneRelogio {
   border-radius: 28px;
-  background-color: #e1e1e1;
+  background-color: var(--infoB);
   text-align: center;
   width: 240px;
   height: 100px;
@@ -80,11 +82,12 @@
 
 .FalaBeneRelogio p {
   width: 240px;
+  color: var(--falaP);
 }
 
 .FalaBeneDedo {
   border-radius: 28px;
-  background-color: #e1e1e1;
+  background-color: var(--infoB);
   text-align: center;
   width: 240px;
   height: 50px;
@@ -93,11 +96,12 @@
 
 .FalaBeneDedo p {
   width: 232px;
+  color: var(--falaP);
 }
 
 .FalaBeneDinheiro {
   border-radius: 28px;
-  background-color: #e1e1e1;
+  background-color: var(--infoB);
   text-align: center;
   width: 240px;
   height: 50px;
@@ -106,6 +110,7 @@
 
 .FalaBeneDinheiro p {
   width: 232px;
+  color: var(--falaP);
 }
 
 .separador {
@@ -143,7 +148,7 @@ button:hover {
 }
 
 .btn-primary-A {
-  color: #fff;
+  color: var(--btnProsseguir);
   border: 2px solid #9747ff;
   background-color: #ce82ff;
   width: 96px;

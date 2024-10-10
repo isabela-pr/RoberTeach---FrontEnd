@@ -47,9 +47,14 @@ input {
 }
 
 .fala-R {
-  border: 2px solid #616161;
+  border: 2px solid var(--caixaFala);
   border-radius: 10px 10px 10px 0;
   height: 4em;
+  color: var(--falaR);
+}
+
+.fala-R p {
+  text-align: center;
 }
 
 :root {
@@ -65,6 +70,11 @@ input {
   --bgInput: #f5e6ff;
   --btnColorC: #fff;
   --iconJournal: #000;
+  --falaR: #000;
+  --caixaFala: #616161;
+  --infoB: #e3e3e3;
+  --falaP: #000;
+  --btnProsseguir: #fff;
 }
 
 @media (prefers-color-scheme= dark) {
@@ -81,5 +91,10 @@ input {
     --bgInput: #3a294f;
     --btnColorC: #151323;
     --iconJournal: #fff;
+    --falaR: #fff;
+    --caixaFala: #404040;
+    --infoB: #404040;
+    --falaP: #fff;
+    --btnProsseguir: #000;
   }
 }
