@@ -17,41 +17,41 @@ const Atividades = () => {
       <Header />
       <img src={separador} alt="" className="Separador" />
 
-      <div className="Aprender">
+      <div className="Aprender d-flex justify-content-center">
         <p>Eu quero aprender...</p>
       </div>
-      <div className="Atividades">
-        <div className="LP">
+      <div className="Atividades d-flex justify-content-center flex-column align-items-center">
+        <div className="LP d-flex">
           <img src={LP} alt="" />
           <button className="customização-button">
             Língua Portuguesa
           </button>
         </div>
-        <div className="LP">
+        <div className="LP d-flex">
           <img src={Mat} alt="" />
           <button className="customização-button">
             Matemática
           </button>
         </div>
-        <div className="LP">
+        <div className="LP d-flex">
           <img src={LI} alt="" />
           <button className="customização-button">
             Língua Inglesa
           </button>
         </div>
-        <div className="LP">
+        <div className="LP d-flex">
           <img src={Hist} alt="" />
           <button className="customização-button">
             História
           </button>
         </div>
-        <div className="LP">
+        <div className="LP d-flex">
           <img src={Geo} alt="" />
           <button className="customização-button">
             Geografia
           </button>
         </div>
-        <div className="LP">
+        <div className="LP d-flex">
           <img src={Bio} alt="" />
           <button className="customização-button">
             Biologia

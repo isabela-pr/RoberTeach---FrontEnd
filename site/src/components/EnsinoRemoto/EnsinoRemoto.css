@@ -1,16 +1,4 @@
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.box {
-  width: 50%;
-  padding: 5px;
-}
-
-
 
 .login {
   font-family: Karla;

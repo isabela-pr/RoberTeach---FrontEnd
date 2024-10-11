@@ -7,7 +7,7 @@ import rodape from "../../assets/rodapeApp.png";
 const EntrarConta = () => {
   return (
     <>
-      <div className="logoRT mt-5">
+      <div className="d-flex justify-content-center mt-5">
         <img src={RoberTeach} alt="" />
       </div>
       <div className="login-container">
@@ -38,7 +38,7 @@ const EntrarConta = () => {
               Lembre-se de mim
             </label>
           </div>
-          <Link className="EntrarP btn btn-primary-E" to={"../Perfis"}>
+          <Link className="EntrarP btn btn-primary-E d-flex justify-content-center" to={"../Perfis"}>
             <p>Entrar</p>
           </Link>
         </form>

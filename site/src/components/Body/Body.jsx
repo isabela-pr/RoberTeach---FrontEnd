@@ -5,7 +5,7 @@ import RobertoConfuso from "../../assets/RobertinhoConfuso.png";
 const Body = () => {
   return (
     <>
-      <div className="container">
+      <div className="container d-flex justify-content-center align-items-center">
         <div className="mt-5 box">
           <img src={RobertoConfuso} alt="" />
         </div>

@@ -15,11 +15,11 @@ import { Link } from "react-router-dom";
 const Beneficios = () => {
   return (
     <>
-      <div className="Sequencia">
+      <div className="Sequencia d-flex justify-content-center mt-4">
         <img src={setinha} alt="" />
         <img src={sequencia} alt="" />
       </div>
-      <div className="container-B">
+      <div className="dizendo container d-flex justify-content-center align-items-center mt-4">
         <div className="falando box d-flex justify-content-center align-items-center">
           <img src={RobertinhoPiscando} alt="" className="robertoPiscando" />
         </div>
@@ -27,7 +27,7 @@ const Beneficios = () => {
           <p>O RoberTeach possui diversos benefícios...</p>
         </div>
       </div>
-      <div className="Beneficios">
+      <div className="Beneficios d-flex justify-content-center align-items-center flex-column mt-5">
         <div className="Benef">
           <div className="image">
             <img src={Jornal} alt="" />
