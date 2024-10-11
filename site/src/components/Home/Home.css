@@ -58,11 +58,12 @@ button {
   font-family: Karla;
   font-size: 13px;
   font-weight: 750;
-  border-radius: 14px;
-  border: 2px solid #37464f;
-  background-color: #f2f2f2;
-  height: 38px;
-  width: 96px;
+  border-radius: 1.25em;
+  border: 2px solid #9747ff;
+  background-color: #ce82ff;
+  color: var(--ColorBtn);
+  height: 3em;
+  width: 8.5em;
   cursor: pointer;
   transition: box-shadow 0.3s;
 }
