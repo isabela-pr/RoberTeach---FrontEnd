@@ -35,9 +35,9 @@
   background-color: var(--bgCriarConta);
   border: 3px solid;
   border-color: var(--criarContaStroke);
-  width: 239px;
-  height: 40px;
-  border-radius: 50px;
+  width: 15em;
+  height: 2.5em;
+  border-radius: 3.15em;
   transition: box-shadow 0.3s;
 }
 

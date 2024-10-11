@@ -17,10 +17,10 @@ const Atividades = () => {
       <Header />
       <img src={separador} alt="" className="Separador" />
 
-      <div className="Aprender">
+      <div className="Aprender d-flex justify-content-center mt-1">
         <p>Eu quero aprender...</p>
       </div>
-      <div className="Atividades">
+      <div className="Atividades d-flex justify-content-center flex-column align-items-center">
         <div className="LP">
           <img src={LP} alt="" />
           <button className="customização-button">
@@ -59,7 +59,7 @@ const Atividades = () => {
         </div>
       </div>
 
-      <div className="EntrarAt">
+      <div className="EntrarBf d-flex justify-content-center ">
         <img src={SetinhaVoltar} alt="" className="setinha" />
         <Link className="btn btn-primary-A" to={"../AreasMat"}>
           <div className="Paragrafo">

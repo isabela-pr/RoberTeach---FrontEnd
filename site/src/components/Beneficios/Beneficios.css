@@ -5,17 +5,9 @@
   gap: 1em;
 }
 
-.container-B {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 4em;
-  padding-right: 2em;
-}
-
-.box {
-  width: 50%;
-  padding: 5px;
+.infoBene {
+  width: 22.5em;
+  gap: 2em;
 }
 
 .Beneficios {
@@ -114,19 +106,13 @@
 }
 
 .separador {
-  padding-top: 50px;
+  padding-top: 2em;
 }
 
 .setinha {
   width: 40px;
   color: #ce82ff;
   cursor: pointer;
-}
-
-
-
-.rodape {
-  gap: 12em;
 }
 
 .btn-primary-A {
@@ -151,10 +137,7 @@
 }
 
 .EntrarAt {
-  display: flex;
-  justify-content: center;
-  gap: 12em;
-  margin-top: 2em;
+  gap: 10em;
 }
 
 .Paragrafo {
