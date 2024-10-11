@@ -78,7 +78,7 @@ const Home = () => {
           </nav>
 
           <img src={Separador} alt="" className="separador" />
-          <div className="rodape d-flex justify-content-center align-items-center pt-3">
+          <div className="rodape d-flex justify-content-center align-items-center pt-4">
             <img src={SetinhaVoltar} alt="" className="setinha" />
             <button>prosseguir</button>
           </div>

@@ -118,25 +118,7 @@
   cursor: pointer;
 }
 
-button {
-  text-transform: uppercase;
-  font-family: Karla;
-  font-size: 13px;
-  font-weight: 750;
-  border-radius: 14px;
-  border: 2px solid #9747ff;
-  background-color: #ce82ff;
-  color: var(--ColorBtn);
-  height: 38px;
-  width: 96px;
-  cursor: pointer;
-  transition: box-shadow 0.3s;
-}
 
-button:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  transform: translateY(2px);
-}
 
 
 .btn-primary-A {

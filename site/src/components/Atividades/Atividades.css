@@ -3,9 +3,7 @@
 }
 
 .Aprender {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.5em;
+  margin-top: 0.3em;
 }
 
 .Aprender p {
@@ -14,16 +12,12 @@
 }
 
 .Atividades {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.5em;
-  margin-top: 2em;
+  gap: 2em;
+  margin-top: 1em;
 }
 
 .LP {
-  gap: 1em;
+  gap: 1.5em;
 }
 
 .customização-button {

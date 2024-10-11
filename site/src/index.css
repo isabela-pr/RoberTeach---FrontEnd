@@ -32,7 +32,7 @@ input {
 
 .fala-roberto {
   width: 170px;
-  height: 75px;
+  height: 3.5em;
   background-color: var(--FalaRob);
   border: 3px solid;
   border-color: #616161;
@@ -50,6 +50,7 @@ input {
   border: 2px solid var(--caixaFala);
   border-radius: 10px 10px 10px 0;
   color: var(--falaR);
+  width: 32em;
 }
 
 .fala-R p {

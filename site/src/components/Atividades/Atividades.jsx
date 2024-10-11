@@ -17,11 +17,11 @@ const Atividades = () => {
       <Header />
       <img src={separador} alt="" className="Separador" />
 
-      <div className="Aprender">
+      <div className="Aprender d-flex justify-content-center">
         <p>Eu quero aprender...</p>
       </div>
-      <div className="Atividades">
-        <div className="LP">
+      <div className="Atividades d-flex justify-content-center align-items-center flex-column">
+        <div className="LP d-flex">
           <img src={LP} alt="" />
           <button className="customização-button">
             Língua Portuguesa

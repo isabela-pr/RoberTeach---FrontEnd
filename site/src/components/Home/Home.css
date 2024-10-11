@@ -57,14 +57,14 @@
 button {
   text-transform: uppercase;
   font-family: Karla;
-  font-size: 13px;
+  font-size: 0.8em;
   font-weight: 750;
-  border-radius: 1.25em;
+  border-radius: 1.15em;
   border: 2px solid #9747ff;
   background-color: #ce82ff;
   color: var(--ColorBtn);
   height: 3em;
-  width: 8.5em;
+  width: 9em;
   cursor: pointer;
   transition: box-shadow 0.3s;
 }

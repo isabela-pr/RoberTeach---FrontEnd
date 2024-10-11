@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 const Beneficios = () => {
   return (
     <>
-      <div className="Sequencia">
+      <div className="Sequencia d-flex justify-content-center mt-2">
         <img src={setinha} alt="" />
         <img src={sequencia} alt="" />
       </div>
@@ -27,8 +27,8 @@ const Beneficios = () => {
           <p>O RoberTeach possui diversos benefícios...</p>
         </div>
       </div>
-      <div className="Beneficios">
-        <div className="Benef">
+      <div className="Beneficios d-flex justify-content-center flex-column align-items-center mt-5">
+        <div className="Benef mt-3">
           <div className="image">
             <img src={Jornal} alt="" />
           </div>
@@ -73,7 +73,7 @@ const Beneficios = () => {
         </div>
       </div>
       <img src={Separador} alt="" className="separador" />
-      <div className="EntrarAt d-flex justify-content-center mt-3">
+      <div className="EntrarAt d-flex justify-content-center mt-4">
         <img src={SetinhaVoltar} alt="" className="setinha" />
         <Link className="btn btn-primary-A" to={"../Atividades"}>
           <div className="Paragrafo">
