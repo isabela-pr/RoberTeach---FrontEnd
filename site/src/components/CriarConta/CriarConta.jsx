@@ -1,24 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "./CriarConta.css";
 import RoberTeach from "../../assets/RT-Maior.png";
 import { Link } from "react-router-dom";
 import rodape from "../../assets/rodapeApp.png";
 
 const CriarConta = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSignup = async (e) => {
+    e.preventDefault();
+
+    if (password !== confirmPassword) {
+      setError("As senhas não coincidem.");
+      return;
+    }
+
+    try {
+      const response = await axios.post("/api/CriarConta", { email, password });
+      window.location.href = "/EntrarConta";
+    } catch (err) {
+      setError("Falha ao criar conta");
+    }
+  };
+
   return (
     <>
       <div className="logoRT mt-3">
         <img src={RoberTeach} alt="" />
       </div>
       <div className="login-container mt-5">
-        <form className="login-form">
+        <form className="login-form" onSubmit={handleSignup}>
           <div className="form-group">
             <label htmlFor="email">Email</label>
             <input
               type="email"
-              id="email"
-              className="input-field"
               placeholder="@mail.com"
+              id="email"
+              value={email}
+              className="input-field"
+              onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </div>
 
@@ -36,9 +60,12 @@ const CriarConta = () => {
             <label htmlFor="password">Senha</label>
             <input
               type="password"
-              id="password"
-              className="input-field"
               placeholder="Senha"
+              id="password"
+              value={password}
+              className="input-field"
+              onChange={(e) => setPassword(e.target.value)}
+              required
             />
           </div>
 
@@ -49,9 +76,10 @@ const CriarConta = () => {
             </label>
           </div>
         </form>
-          <Link className="CriarP btn btn-primary-C" to={"../Beneficios"}>
-            <p>Criar</p>
-          </Link>
+        <Link className="CriarP btn btn-primary-C" to={"../Beneficios"}>
+          <p>Criar</p>
+        </Link>
+        {error && <p>{error}</p>}
       </div>
       <div className="footer">
         <img src={rodape} alt="" />
