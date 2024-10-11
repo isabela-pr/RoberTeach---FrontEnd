@@ -7,10 +7,10 @@ import rodape from "../../assets/rodapeApp.png";
 const CriarConta = () => {
   return (
     <>
-      <div className="logoRT mt-5">
+      <div className="logoRT mt-3">
         <img src={RoberTeach} alt="" />
       </div>
-      <div className="login-container">
+      <div className="login-container mt-5">
         <form className="login-form">
           <div className="form-group">
             <label htmlFor="email">Email</label>

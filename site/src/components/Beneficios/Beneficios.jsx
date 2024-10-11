@@ -19,7 +19,7 @@ const Beneficios = () => {
         <img src={setinha} alt="" />
         <img src={sequencia} alt="" />
       </div>
-      <div className="container-B">
+      <div className="container d-flex justify-content-center align-items-center mt-4 infoBene">
         <div className="falando box d-flex justify-content-center align-items-center">
           <img src={RobertinhoPiscando} alt="" className="robertoPiscando" />
         </div>
@@ -73,7 +73,7 @@ const Beneficios = () => {
         </div>
       </div>
       <img src={Separador} alt="" className="separador" />
-      <div className="EntrarAt">
+      <div className="EntrarAt d-flex justify-content-center mt-3">
         <img src={SetinhaVoltar} alt="" className="setinha" />
         <Link className="btn btn-primary-A" to={"../Atividades"}>
           <div className="Paragrafo">

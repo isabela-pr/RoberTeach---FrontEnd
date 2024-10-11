@@ -7,7 +7,8 @@
   background-color: #d9d9d9;
 }
 
-.box-e {
+
+.campos {
   display: flex;
   padding-top: 2em;
   justify-content: center;
@@ -74,7 +75,7 @@ button:hover {
 }
 
 .rodape {
-  gap: 12em;
+  gap: 10em;
 }
 
 body {

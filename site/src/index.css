@@ -62,11 +62,16 @@ input {
   background-color: #caa2ff;
   position: fixed;
   bottom: 0;
-  left: 0;
+  /* left: 0; */
   width: 100%;
 }
 
-
+.EntrarBf {
+  display: flex;
+  justify-content: center;
+  gap: 10em;
+  margin-top: 3em;
+}
 
 :root {
   --bgColor: white;

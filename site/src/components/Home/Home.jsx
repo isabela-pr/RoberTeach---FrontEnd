@@ -60,7 +60,7 @@ const Home = () => {
         <Header />
         <Body />
         <div id="row">
-          <nav className="gap-4 box-e d-flex flex-column d-md-block col col-md justify-content-center rounded-3">
+          <nav className="campos gap-4 box  d-flex flex-column d-md-block col col-md justify-content-center rounded-3">
             <Link
               className="ensinoRemoto btn bg-light text-primary-emphasis border"
               to={"../EnsinoRemoto"}
@@ -78,7 +78,7 @@ const Home = () => {
           </nav>
 
           <img src={Separador} alt="" className="separador" />
-          <div className="rodape d-flex justify-content-center align-items-center pt-4">
+          <div className="rodape d-flex justify-content-center align-items-center pt-3">
             <img src={SetinhaVoltar} alt="" className="setinha" />
             <button>prosseguir</button>
           </div>
