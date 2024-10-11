@@ -7,11 +7,7 @@ import rodape from "../../assets/rodapeApp.png";
 const CriarConta = () => {
   return (
     <>
-<<<<<<< HEAD
       <div className="logoRT mt-3">
-=======
-      <div className="d-flex justify-content-center mt-5">
->>>>>>> origin/main
         <img src={RoberTeach} alt="" />
       </div>
       <div className="login-container mt-5">

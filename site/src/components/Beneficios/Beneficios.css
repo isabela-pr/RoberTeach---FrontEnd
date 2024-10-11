@@ -2,11 +2,12 @@
   gap: 1em;
 }
 
-<<<<<<< HEAD
+
 .infoBene {
   width: 22.5em;
   gap: 2em;
-=======
+}
+
 .dizendo{
   padding-right: 2em;
 
@@ -15,7 +16,6 @@
 .falando{
   width: 22em;
   padding-right: 1em;
->>>>>>> origin/main
 }
 
 .Beneficios {
@@ -118,8 +118,6 @@
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-=======
 button {
   text-transform: uppercase;
   font-family: Karla;
@@ -141,7 +139,6 @@ button:hover {
 }
 
 
->>>>>>> origin/main
 .btn-primary-A {
   color: var(--btnProsseguir);
   border: 2px solid #9747ff;
