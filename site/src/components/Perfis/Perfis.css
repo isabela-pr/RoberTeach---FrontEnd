@@ -9,11 +9,7 @@ h6 {
 }
 
 .Perfil {
-  display: flex;
-  justify-content: center;
-  text-align: center;
   gap: 2.5em;
-  margin-top: 2em;
 }
 
 .Perfil p {
@@ -21,14 +17,12 @@ h6 {
 }
 
 .Sair {
-  display: flex;
   text-transform: uppercase;
-  justify-content: center;
   font-family: Karla;
 }
 
 .Sair2 {
-  width: 180px;
+  width: 11em;
 }
 
 .btn-primary {

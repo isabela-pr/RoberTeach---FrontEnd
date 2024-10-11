@@ -18,7 +18,7 @@ const Perfis = () => {
         <img src={separador} alt="" />
       </div>
       <h6>Selecione o seu perfil:</h6>
-      <div className="Perfil">
+      <div className="Perfil d-flex justify-content-center text-center mt-4">
         <div className="Perfis1">
           <div>
             <img src={Giovana} alt="" />
@@ -48,7 +48,7 @@ const Perfis = () => {
           </div>
         </div>
       </div>
-      <div className="Sair">
+      <div className="Sair d-flex justify-content-center">
         <Link className="Sair2 btn btn-primary" to={"../EntrarConta"}>
          <p>Sair</p> 
         </Link>

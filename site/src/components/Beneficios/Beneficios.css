@@ -1,21 +1,24 @@
 .Sequencia {
-  display: flex;
-  justify-content: center;
-  margin-top: 2em;
   gap: 1em;
 }
 
+<<<<<<< HEAD
 .infoBene {
   width: 22.5em;
   gap: 2em;
+=======
+.dizendo{
+  padding-right: 2em;
+
+}
+
+.falando{
+  width: 22em;
+  padding-right: 1em;
+>>>>>>> origin/main
 }
 
 .Beneficios {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3em;
-  flex-direction: column;
   gap: 1.5em;
 }
 
@@ -115,6 +118,30 @@
   cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
+button {
+  text-transform: uppercase;
+  font-family: Karla;
+  font-size: 13px;
+  font-weight: 750;
+  border-radius: 14px;
+  border: 2px solid #9747ff;
+  background-color: #ce82ff;
+  color: var(--ColorBtn);
+  height: 38px;
+  width: 96px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+button:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(2px);
+}
+
+
+>>>>>>> origin/main
 .btn-primary-A {
   color: var(--btnProsseguir);
   border: 2px solid #9747ff;

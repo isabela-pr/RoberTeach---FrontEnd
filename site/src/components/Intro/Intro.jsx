@@ -16,12 +16,12 @@ const Intro = () => {
   return (
     <>
       <div className="body">
-        <div class="eye-container">
-          <div class="eye">
-            <div class="shine"></div>
+        <div className="eye-container">
+          <div className="eye">
+            <div className="shine"></div>
           </div>
-          <div class="eye">
-            <div class="shine"></div>
+          <div className="eye">
+            <div className="shine"></div>
           </div>
         </div>
         <div className="Empresa">
