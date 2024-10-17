@@ -17,7 +17,7 @@ const EntrarConta = async () => {
   try{
     const response = await axios.post('/api/EntrarConta', {email, password});
     localStorage.setItem('token', response.data.token);
-    window.location.href = '/dashboard';
+    window.location.href = '../Perfis';
   } catch (err){
     setError('Falha ao Entrar na Conta. Verifique suas credenciais');
   }
