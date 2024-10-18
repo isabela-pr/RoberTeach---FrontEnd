@@ -71,12 +71,12 @@
   background-color: var(--infoB);
   text-align: center;
   width: 240px;
-  height: 100px;
+  height: 50px;
   box-shadow: 0 4px 6px 0 rgba(217, 217, 217, 0.17);
 }
 
 .FalaBeneRelogio p {
-  width: 240px;
+  width: 232px;
   color: var(--falaP);
 }
 

@@ -49,9 +49,8 @@ const Beneficios = () => {
             <img src={Relogio} alt="" />
           </div>
           <div className="FalaBeneRelogio">
-            <p>
-              Diminui a carga horária e a falta de tempo dos professores para
-              marcar a presença dos alunos em sala de aula
+            <p className="ps-2 pe-2">
+              Diminui a carga horária e a falta de tempo dos professores
             </p>
           </div>
         </div>
