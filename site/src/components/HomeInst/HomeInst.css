@@ -1,14 +1,1 @@
-.kakak {
-    width: 284px;
-  height: 57px;
 
-  border: none;
-  border-radius: 30px; /* Canto arredondado */
-  color: white;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
