@@ -94,6 +94,8 @@ input {
   margin-right: 5px;
 }
 
+
+
 :root {
   --bgColor: white;
   --ColorBtn: white;
@@ -112,6 +114,11 @@ input {
   --infoB: #e3e3e3;
   --falaP: #000;
   --btnProsseguir: #fff;
+  --aprender: rgba(0, 0, 0, 0.29);
+  --customBtnBg: #fff;
+  --customBorder: #e0e0e0;
+  --customColor: black;
+  --customShadow: rgba(0, 0, 0, 0.15);
 }
 
 @media (prefers-color-scheme= dark) {
@@ -133,5 +140,10 @@ input {
     --infoB: #404040;
     --falaP: #fff;
     --btnProsseguir: #000;
+    --aprender: #fff;
+    --customBtnBg: #151323;
+    --customBorder: #2b2a37;
+    --customColor: white;
+    --customShadow: rgba(43, 42, 55, 1);
   }
 }

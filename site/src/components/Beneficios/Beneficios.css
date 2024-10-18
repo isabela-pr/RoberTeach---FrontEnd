@@ -2,18 +2,16 @@
   gap: 1em;
 }
 
-
 .infoBene {
   width: 22.5em;
   gap: 2em;
 }
 
-.dizendo{
+.dizendo {
   padding-right: 2em;
-
 }
 
-.falando{
+.falando {
   width: 22em;
   padding-right: 1em;
 }
@@ -117,9 +115,6 @@
   color: #ce82ff;
   cursor: pointer;
 }
-
-
-
 
 .btn-primary-A {
   color: var(--btnProsseguir);
