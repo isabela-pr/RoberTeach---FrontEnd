@@ -1,10 +1,4 @@
-
-  
-  
-  input {
-    font-family: Khula;
-  }
-  
+ 
   .CriarP {
     display: flex;
     justify-content: center;
@@ -33,6 +27,6 @@
     box-shadow: 0 4px 10px rgba(151, 74, 255, 10);
     transform: translateY(2px);
   }
-  
+
   
   

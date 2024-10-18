@@ -2,13 +2,13 @@ import React from 'react'
 import rodape from "../../assets/rodapeApp.png";
 import "./Aluno.css"
 import { Link } from 'react-router-dom';
-import RoberTeachInstitucional from "../../assets/RoberTeachInstitucional.png"
+import RoberTeach from "../../assets/RoberTeach.png"
 
 const Aluno = () => {
   return (
     <>
-    <div className="logoRT mt-3">
-      <img src={RoberTeachInstitucional} alt="" />
+    <div className="mt-3 d-flex justify-content-center">
+      <img src={RoberTeach} alt="" />
     </div>
     <div className="login-container">
       <form className="login-form">
