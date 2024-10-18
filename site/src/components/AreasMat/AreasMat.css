@@ -1,0 +1,25 @@
+.item {
+  margin: 10px;
+  padding: 15px;
+  background-color: #2c2c2e;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.item.selected {
+  background-color: #4b0082; /* Cor do item selecionado */
+}
+
+.proceed-button {
+  padding: 10px 20px;
+  background-color: gray; /* Cor padrão do botão desativado */
+  color: #fff;
+  border: none;
+  cursor: not-allowed;
+}
+
+.proceed-button.active {
+  background-color: #800080; /* Cor quando ativado */
+  cursor: pointer;
+}

@@ -19,7 +19,7 @@ label {
   background-color: var(--bgInput);
   outline: none;
   font-size: 16px;
-  color: #333;
+  color: var(--colorText);
 }
 
 .input-field::placeholder {
@@ -94,8 +94,6 @@ input {
   margin-right: 5px;
 }
 
-
-
 :root {
   --bgColor: white;
   --ColorBtn: white;
@@ -119,6 +117,9 @@ input {
   --customBorder: #e0e0e0;
   --customColor: black;
   --customShadow: rgba(0, 0, 0, 0.15);
+  --colorText: #333;
+  --textColorER: #000;
+  --textColorEI: #000
 }
 
 @media (prefers-color-scheme= dark) {
@@ -145,5 +146,8 @@ input {
     --customBorder: #2b2a37;
     --customColor: white;
     --customShadow: rgba(43, 42, 55, 1);
+    --colorText: #fff;
+    --textColorER: #fff;
+    --textColorEI: #fff
   }
 }

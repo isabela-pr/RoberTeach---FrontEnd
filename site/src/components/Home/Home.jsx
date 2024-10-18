@@ -62,14 +62,14 @@ const Home = () => {
         <div id="row">
           <nav className="campos gap-4 box  d-flex flex-column d-md-block col col-md justify-content-center rounded-3">
             <Link
-              className="ensinoRemoto btn bg-light text-primary-emphasis border"
+              className="ensinoRemoto btn border"
               to={"../EnsinoRemoto"}
             >
               <img src={ensinoRemoto} alt="" />
               Ensino Remoto
             </Link>
             <Link
-              className="ensinoInstitucional btn bg-light text-primary-emphasis border"
+              className="ensinoInstitucional btn border"
               to={"../EnsinoInstitucional"}
             >
               <img src={EnsinoInstitucional} alt="" />
