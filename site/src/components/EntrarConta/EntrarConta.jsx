@@ -67,7 +67,7 @@ const EntrarConta = async () => {
           {error && <p>{error}</p>}
         </form>
       </div>
-      <div className="footer">
+      <div className="footer d-flex justify-content-center position-fixed">
         <img src={rodape} alt="" />
       </div>
     </>

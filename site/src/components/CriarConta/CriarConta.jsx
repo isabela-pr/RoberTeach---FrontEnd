@@ -28,7 +28,7 @@ const CriarConta = () => {
 
   return (
     <>
-      <div className="logoRT mt-3">
+      <div className="d-flex justify-content-center mt-3">
         <img src={RoberTeach} alt="" />
       </div>
       <div className="login-container mt-5">
@@ -81,7 +81,7 @@ const CriarConta = () => {
         </Link>
         {error && <p>{error}</p>}
       </div>
-      <div className="footer">
+      <div className="footer d-flex justify-content-center position-fixed">
         <img src={rodape} alt="" />
       </div>
     </>

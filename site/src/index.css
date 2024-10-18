@@ -53,17 +53,9 @@ input {
   width: 32em;
 }
 
-.fala-R p {
-  text-align: center;
-}
-
 .footer {
-  display: flex;
-  justify-content: center;
   background-color: #caa2ff;
-  position: fixed;
   bottom: 0;
-  /* left: 0; */
   width: 100%;
 }
 
@@ -72,11 +64,6 @@ input {
   justify-content: center;
   gap: 10em;
   margin-top: 3em;
-}
-
-.logoRT {
-  display: flex;
-  justify-content: center;
 }
 
 .login-container {

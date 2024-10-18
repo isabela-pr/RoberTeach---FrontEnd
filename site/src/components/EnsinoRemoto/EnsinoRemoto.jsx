@@ -12,7 +12,7 @@ const EnsinoRemoto = () => {
             <img src={RobertinhoPiscando} alt="" className="robertoPiscando" />
           </div>
           <div className="col m-0 me-3 d-flex justify-content-center align-items-center fala-R">
-            <p className="m-0">
+            <p className="m-0 text-center">
               Olá, eu sou o Roberto Robô, venha conhecer o meu site!
             </p>
           </div>
