@@ -7,7 +7,7 @@ import RoberTeachInstitucional from "../../assets/RoberTeachInstitucional.png"
 const Aluno = () => {
   return (
     <>
-    <div className="logoRT mt-5">
+    <div className="logoRT mt-3">
       <img src={RoberTeachInstitucional} alt="" />
     </div>
     <div className="login-container">
