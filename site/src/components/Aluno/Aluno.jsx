@@ -7,7 +7,7 @@ import RoberTeach from "../../assets/RoberTeach.png"
 const Aluno = () => {
   return (
     <>
-    <div className="mt-3 d-flex justify-content-center">
+    <div className="mt-3 d-flex justify-content-center w-100 ">
       <img src={RoberTeach} alt="" />
     </div>
     <div className="login-container">
