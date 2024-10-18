@@ -1,4 +1,10 @@
- 
+
+  
+  
+  input {
+    font-family: Khula;
+  }
+  
   .CriarP {
     display: flex;
     justify-content: center;

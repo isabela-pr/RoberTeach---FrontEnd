@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 const Beneficios = () => {
   return (
     <>
-      <div className="Sequencia d-flex justify-content-center mt-2">
+      <div className="Sequencia d-flex justify-content-center mt-4">
         <img src={setinha} alt="" />
         <img src={sequencia} alt="" />
       </div>
@@ -24,11 +24,11 @@ const Beneficios = () => {
           <img src={RobertinhoPiscando} alt="" className="robertoPiscando" />
         </div>
         <div className="fala-R box">
-          <p>O RoberTeach possui diversos benefícios...</p>
+          <p className="text-center">O RoberTeach possui diversos benefícios...</p>
         </div>
       </div>
       <div className="Beneficios d-flex justify-content-center flex-column align-items-center mt-5">
-        <div className="Benef mt-3">
+        <div className="Benef mt-1">
           <div className="image">
             <img src={Jornal} alt="" />
           </div>
