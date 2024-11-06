@@ -12,62 +12,63 @@ import SetinhaVoltar from "../../assets/setinhaVoltar.svg";
 // import axios from 'axios';
 
 const Home = () => {
+  //   const [questions, setQuestions] = useState([]);
+  //   const [currentQuestion, setCurrentQuestion] = useState(0);
+  //   const [selectedAnswer, setSelectedAnswer] = useState('');
+  //   const [isCorrect, setIsCorrect] = useState(null);
 
-//   const [questions, setQuestions] = useState([]);
-//   const [currentQuestion, setCurrentQuestion] = useState(0);
-//   const [selectedAnswer, setSelectedAnswer] = useState('');
-//   const [isCorrect, setIsCorrect] = useState(null);
+  //   // Função para carregar as questões de matemática da API do ENEM
+  //   const fetchMathQuestions = async () => {
+  //     try {
+  //       const response = await axios.get('https://api.enem.dev/v1/questions', {
+  //         params: {
+  //           subject: 'matematica' // Filtra por questões de matemática
+  //         }
+  //       });
+  //       setQuestions(response.data);
+  //     } catch (error) {
+  //       console.error('Erro ao carregar questões:', error);
+  //     }
+  //   };
 
-//   // Função para carregar as questões de matemática da API do ENEM
-//   const fetchMathQuestions = async () => {
-//     try {
-//       const response = await axios.get('https://api.enem.dev/v1/questions', {
-//         params: {
-//           subject: 'matematica' // Filtra por questões de matemática
-//         }
-//       });
-//       setQuestions(response.data);
-//     } catch (error) {
-//       console.error('Erro ao carregar questões:', error);
-//     }
-//   };
+  //   // UseEffect para carregar as questões ao montar o componente
+  //   useEffect(() => {
+  //     fetchMathQuestions();
+  //   }, []);
 
-//   // UseEffect para carregar as questões ao montar o componente
-//   useEffect(() => {
-//     fetchMathQuestions();
-//   }, []);
+  //   // Função para verificar a resposta
+  //   const handleAnswerSubmit = () => {
+  //     const correctAnswer = questions[currentQuestion].correct;
+  //     setIsCorrect(selectedAnswer === correctAnswer);
+  //   };
 
-//   // Função para verificar a resposta
-//   const handleAnswerSubmit = () => {
-//     const correctAnswer = questions[currentQuestion].correct;
-//     setIsCorrect(selectedAnswer === correctAnswer);
-//   };
+  //   // Função para avançar para a próxima pergunta
+  //   const nextQuestion = () => {
+  //     setIsCorrect(null);
+  //     setSelectedAnswer('');
+  //     setCurrentQuestion(currentQuestion + 1);
+  //   };
 
-//   // Função para avançar para a próxima pergunta
-//   const nextQuestion = () => {
-//     setIsCorrect(null);
-//     setSelectedAnswer('');
-//     setCurrentQuestion(currentQuestion + 1);
-//   };
-
-//   // Se ainda não carregou as questões, mostra um carregamento
-//   if (questions.length === 0) {
-//     return <div>Carregando questões de matemática...</div>;
-//   }
+  //   // Se ainda não carregou as questões, mostra um carregamento
+  //   if (questions.length === 0) {
+  //     return <div>Carregando questões de matemática...</div>;
+  //   }
 
   return (
     <>
-        <Header />
-        <Body />
-        <div id="row">
-          <nav className="campos gap-4 box  d-flex flex-column d-md-block col col-md justify-content-center rounded-3">
-            <Link
-              className="ensinoRemoto btn border"
-              to={"../EnsinoRemoto"}
-            >
+      <Header />
+      <Body />
+      <div className="row w-100 mt-5">
+        <div className="col-md-6">
+          <nav className="campos box d-flex flex-column justify-content-center ">
+            <Link className="ensinoRemoto btn border" to={"../EnsinoRemoto"}>
               <img src={ensinoRemoto} alt="" />
               Ensino Remoto
             </Link>
+          </nav>
+        </div>
+        <div className="col-md-6">
+          <nav className="campos box d-flex flex-column justify-content-center ">
             <Link
               className="ensinoInstitucional btn border"
               to={"../EnsinoInstitucional"}
@@ -76,18 +77,20 @@ const Home = () => {
               Ensino Institucional
             </Link>
           </nav>
-
-          <img src={Separador} alt="" className="separador" />
-          <div className="rodape d-flex justify-content-center align-items-center pt-4">
-            <img src={SetinhaVoltar} alt="" className="setinha" />
-            <button>prosseguir</button>
-          </div>
         </div>
-</>
+      </div>
 
+      {/* <div className="row w-100 g-1">
+        <img src={Separador} alt="" className="separador" />
+        <div className="g-4 d-flex g-3 justify-content-center align-items-center pt-4 col-md-6">
+          <img src={SetinhaVoltar} alt="" className="setinha" />
+        </div>
+        <div className="d-flex g-3 justify-content-center align-items-center pt-4 col-md-6">
+          <button>prosseguir</button>
+        </div>
+      </div> */}
+    </>
 
-
-  
     /* <div>
       <h1>Questão de Matemática</h1>
       <div>
