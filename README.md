@@ -50,7 +50,7 @@ A RoberTech apresenta o "RoberTeach", uma solução inovadora que combina Intern
 
 
 ## 🔗 Links
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)]([https://instagram.com](https://www.instagram.com/robertechbusiness?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==))
+Instagram: https://www.instagram.com/robertechbusiness/
 Link
 Trello: https://trello.com/invite/b/66a25d05da98fd132e803289/ATTI76407e94854e41e1883eba1990f65ee2A4674B02/roberto-robo 
 
