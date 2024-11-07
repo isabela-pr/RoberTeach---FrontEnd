@@ -19,7 +19,7 @@ label {
   background-color: var(--bgInput);
   outline: none;
   font-size: 16px;
-  color: #333;
+  color: var(--colorText);
 }
 
 .input-field::placeholder {
@@ -32,7 +32,7 @@ input {
 
 .fala-roberto {
   width: 170px;
-  height: 75px;
+  height: 3.5em;
   background-color: var(--FalaRob);
   border: 3px solid;
   border-color: #616161;
@@ -49,22 +49,20 @@ input {
 .fala-R {
   border: 2px solid var(--caixaFala);
   border-radius: 10px 10px 10px 0;
-  height: 4em;
   color: var(--falaR);
 }
 
-.fala-R p {
-  text-align: center;
+.footer {
+  background-color: #caa2ff;
+  bottom: 0;
+  width: 100%;
 }
 
-.footer {
+.EntrarBf {
   display: flex;
   justify-content: center;
-  background-color: #caa2ff;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  gap: 10em;
+  margin-top: 3em;
 }
 
 .login-container {
@@ -95,10 +93,6 @@ input {
   margin-right: 5px;
 }
 
-.rodape {
-  gap: 12em;
-}
-
 :root {
   --bgColor: white;
   --ColorBtn: white;
@@ -111,12 +105,26 @@ input {
   --label: #000;
   --bgInput: #f5e6ff;
   --btnColorC: #fff;
-  --iconJournal: #000;
+  --icons: #000;
   --falaR: #000;
   --caixaFala: #616161;
   --infoB: #e3e3e3;
   --falaP: #000;
   --btnProsseguir: #fff;
+  --aprender: rgba(0, 0, 0, 0.29);
+  --customBtnBg: #fff;
+  --customBorder: #e0e0e0;
+  --customColor: black;
+  --customShadow: rgba(0, 0, 0, 0.15);
+  --colorText: #333;
+  --textColorER: #000;
+  --textColorEI: #000;
+  --bgAreaMat: #fff;
+  --borderAreaMat: #d9d9d9;
+  --textItem: #000;
+  --itemSelect: #f0e6ff;
+  --colorBtnP: #fff;
+  --colorBgP: #e0e0e0
 }
 
 @media (prefers-color-scheme= dark) {
@@ -132,11 +140,26 @@ input {
     --label: #fff;
     --bgInput: #3a294f;
     --btnColorC: #151323;
-    --iconJournal: #fff;
+    --icons: #fff;
     --falaR: #fff;
     --caixaFala: #404040;
     --infoB: #404040;
     --falaP: #fff;
     --btnProsseguir: #000;
+    --aprender: #fff;
+    --customBtnBg: #151323;
+    --customBorder: #2b2a37;
+    --customColor: white;
+    --customShadow: rgba(43, 42, 55, 1);
+    --colorText: #fff;
+    --textColorER: #fff;
+    --textColorEI: #fff;
+    --bgAreaMat: #151323;
+    --borderAreaMat: #2b2a37;
+    --textItem: #fff;
+    --itemSelect: #392260;
+    --colorBtnP: #37464F;
+    --colorBgP: #262431
+
   }
 }

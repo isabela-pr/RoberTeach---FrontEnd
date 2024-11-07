@@ -1,0 +1,47 @@
+.login {
+    font-family: Karla;
+    text-transform: uppercase;
+    justify-content: center;
+  }
+  
+  
+  .Professor p {
+    color: #ce82ff;
+  }
+  
+  .Aluno p {
+    color: var(--entrarContaP);
+  }
+  
+  .btn-primary-e {
+    border: 0.18em solid;
+    border-color: #9747ff;
+    background-color: #ce82ff;
+    width: 15em;
+    height: 2.5em;
+    border-radius: 3.15em;
+    transition: box-shadow 0.3s;
+  }
+  
+  .btn-primary-e:hover {
+    background-color: #ce82ff;
+    box-shadow: 0 4px 10px rgba(151, 74, 255, 10);
+    transform: translateY(2px);
+  }
+  
+  .btn-primary-c {
+    background-color: var(--bgCriarConta);
+    border: 3px solid;
+    border-color: var(--criarContaStroke);
+    width: 239px;
+    height: 40px;
+    border-radius: 50px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .btn-primary-c:hover {
+    background-color: var(--bgCriarConta);
+    box-shadow: 0 4px 10px rgba(64, 64, 64, 1);
+    transform: translateY(2px);
+  }
+  

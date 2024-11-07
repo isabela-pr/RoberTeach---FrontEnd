@@ -1,41 +1,61 @@
+.btn-primary-A {
+  color: var(--btnProsseguir);
+  border: 2px solid #9747ff;
+  background-color: #ce82ff;
+  width: 96px;
+  height: 40px;
+  border-radius: 14px;
+  text-transform: uppercase;
+  font-family: Karla;
+  font-size: 13px;
+  font-weight: 750;
+  transition: box-shadow 0.3s;
+}
+
+.btn-primary-A:hover {
+  background-color: #ce82ff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transform: translateY(2px);
+}
+
 .Separador {
   margin-bottom: 1em;
 }
 
 .Aprender {
-  margin-top: 1.5em;
+  margin-top: 0.3em;
 }
 
 .Aprender p {
-  color: rgba(0, 0, 0, 0.29);
+  color: var(--aprender);
   font-family: Itim;
 }
 
 .Atividades {
-  gap: 2.5em;
-  margin-top: 2em;
+  gap: 2em;
+  margin-top: 1em;
 }
 
 .LP {
-  gap: 1em;
+  gap: 1.5em;
 }
 
 .customização-button {
   font-size: 10px;
   font-family: Itim;
-  background-color: white;
+  background-color: var(--customBtnBg);
   width: 209px;
   height: 50px;
-  border: 2px solid #e0e0e0;
-  border-radius: 15px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  color: black;
+  border: 2px solid var(--customBorder);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: var(--customColor);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .customização-button:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px var(--customShadow);
 }
 
 .customização-button:focus {

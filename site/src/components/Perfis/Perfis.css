@@ -8,34 +8,10 @@ h6 {
   margin-top: 1em;
 }
 
-.Perfil {
-  gap: 2.5em;
-}
-
-.Perfil p {
-  font-family: Itim;
-}
-
-.Sair {
-  text-transform: uppercase;
-  font-family: Karla;
-}
-
-.Sair2 {
-  width: 11em;
-}
-
-.btn-primary {
-  border: 3px solid;
-  border-color: #9747ff;
-  background-color: #ce82ff;
-  height: 40px;
-  border-radius: 50px;
-  transition: box-shadow 0.3s;
-}
-
-.btn-primary:hover {
-  background-color: #ce82ff;
-  box-shadow: 0 4px 10px rgba(151, 74, 255, 10);
-  transform: translateY(2px);
+.localPerfil{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }

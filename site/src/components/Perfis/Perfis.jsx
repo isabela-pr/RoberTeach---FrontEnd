@@ -2,15 +2,17 @@ import React from "react";
 import "./Perfis.css";
 import Header from "../Header/Header";
 import separador from "../../assets/linha.svg";
-import Giovana from "../../assets/Giovana.png";
-import Maria from "../../assets/Maria.png";
-import Leticia from "../../assets/Leticia.png";
-import Celine from "../../assets/Celine.png";
-import Joaquina from "../../assets/Joaquina.png";
-import Patricia from "../../assets/Patricia.png";
-import { Link } from "react-router-dom";
 
 const Perfis = () => {
+  const perfil = [
+    { id: 2, nome: "Giovanna", Avatar: "../../assets/Giovana.png" },
+    { id: 1, nome: "Maria", Avatar: "../../assets/Maria.png" },
+    { id: 3, nome: "Leticia", Avatar: "../../assets/Leticia.png" },
+    { id: 4, nome: "Celine", Avatar: "../../assets/Celine.png" },
+    { id: 5, nome: "Joaquina", Avatar: "../../assets/Joaquina.png" },
+    { id: 6, nome: "Patricia", Avatar: "../../assets/Patricia.png" },
+  ];
+
   return (
     <>
       <Header />
@@ -18,40 +20,16 @@ const Perfis = () => {
         <img src={separador} alt="" />
       </div>
       <h6>Selecione o seu perfil:</h6>
-      <div className="Perfil d-flex justify-content-center text-center mt-4">
-        <div className="Perfis1">
-          <div>
-            <img src={Giovana} alt="" />
-            <p>Giovanna</p>
-          </div>
-          <div>
-            <img src={Maria} alt="" />
-            <p>Maria</p>
-          </div>
-          <div>
-            <img src={Leticia} alt="" />
-            <p>Leticia</p>
-          </div>
-        </div>
-        <div className="Perfis2">
-          <div>
-            <img src={Celine} alt="" />
-            <p>Celine</p>
-          </div>
-          <div>
-            <img src={Joaquina} alt="" />
-            <p>Joaquina</p>
-          </div>
-          <div>
-            <img src={Patricia} alt="" />
-            <p>Patricia</p>
-          </div>
-        </div>
-      </div>
-      <div className="Sair d-flex justify-content-center">
-        <Link className="Sair2 btn btn-primary" to={"../EntrarConta"}>
-         <p>Sair</p> 
-        </Link>
+
+      <div className="localPerfil">
+        {perfil.map((item) => (
+          <>
+            <div key={item.id} className="perfil">
+              <img src={item.Avatar} alt="" />
+              <p>{item.nome}</p>
+            </div>
+          </>
+        ))}
       </div>
     </>
   );

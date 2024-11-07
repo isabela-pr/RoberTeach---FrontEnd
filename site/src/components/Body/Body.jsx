@@ -6,11 +6,11 @@ const Body = () => {
   return (
     <>
       <div className="container d-flex justify-content-center align-items-center">
-        <div className="mt-5 box">
+        <div className="mt-3 box p-2 w-50">
           <img src={RobertoConfuso} alt="" />
         </div>
         <div className="fala-roberto box">
-          <p>Em qual campo você deseja entrar?</p>
+          <p className="text-center">Em qual campo você deseja entrar?</p>
         </div>
       </div>
     </>

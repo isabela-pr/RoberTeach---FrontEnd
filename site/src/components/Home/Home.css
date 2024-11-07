@@ -1,13 +1,10 @@
-#row {
-  width: 10em;
-  display: contents;
-}
+
 
 .btn-primary {
   background-color: #d9d9d9;
 }
 
-.box-e {
+.campos {
   display: flex;
   padding-top: 2em;
   justify-content: center;
@@ -20,6 +17,7 @@
   font-family: Itim;
   display: inline-block;
   text-align: center;
+  color: var(--textColorER);
   width: 9em;
   height: 161px;
   transition: box-shadow 0.3s;
@@ -27,12 +25,14 @@
 
 .ensinoRemoto:hover {
   box-shadow: 0 4px 10px rgba(151, 74, 255, 10);
+  color: var(--textColorER);
   transform: translateY(2px);
 }
 
 .ensinoInstitucional {
   display: inline-block;
   font-family: Itim;
+  color: var(--textColorEI);
   text-align: center;
   width: 9em;
   transition: box-shadow 0.3s;
@@ -40,15 +40,13 @@
 
 .ensinoInstitucional:hover {
   box-shadow: 0 4px 10px rgba(151, 74, 255, 10);
+  color: var(--textColorEI);
   transform: translateY(2px);
 }
 
-.separador {
-  padding-top: 50px;
-}
+
 
 .setinha {
-  width: 40px;
   color: #ce82ff;
   cursor: pointer;
 }
@@ -56,13 +54,14 @@
 button {
   text-transform: uppercase;
   font-family: Karla;
-  font-size: 13px;
+  font-size: 0.8em;
   font-weight: 750;
-  border-radius: 14px;
-  border: 2px solid #37464f;
-  background-color: #f2f2f2;
-  height: 38px;
-  width: 96px;
+  border-radius: 1.15em;
+  border: 2px solid #9747ff;
+  background-color: #ce82ff;
+  color: var(--ColorBtn);
+  height: 3em;
+  width: 9em;
   cursor: pointer;
   transition: box-shadow 0.3s;
 }
@@ -72,9 +71,7 @@ button:hover {
   transform: translateY(2px);
 }
 
-.rodape {
-  gap: 12em;
-}
+
 
 body {
   background: var(--bgColor);

@@ -17,6 +17,9 @@ import Intro from "./components/Intro/Intro.jsx";
 import Beneficios from "./components/Beneficios/Beneficios.jsx";
 import Atividades from "./components/Atividades/Atividades.jsx";
 import AreasMat from "./components/AreasMat/AreasMat.jsx";
+import Aluno from "./components/Aluno/Aluno.jsx";
+import Professor from "./components/Professor/Professor.jsx";
+import HomeInst from "./components/HomeInst/HomeInst.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +38,9 @@ const router = createBrowserRouter([
       { path: "Beneficios", element: <Beneficios /> },
       { path: "Atividades", element: <Atividades /> },
       { path: "AreasMat", element: <AreasMat /> },
+      { path: "Aluno", element: <Aluno/> },
+      { path: "Professor", element: <Professor/>},
+      { path: "HomeInst", element: <HomeInst/>}
     ],
   },
 ]);
