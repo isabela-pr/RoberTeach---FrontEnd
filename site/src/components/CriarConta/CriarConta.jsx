@@ -28,61 +28,62 @@ const CriarConta = () => {
 
   return (
     <>
-      <div className="d-flex justify-content-center mt-3">
-        <img src={RoberTeach} alt="" />
-      </div>
-      <div className="login-container mt-5">
-        <form className="login-form" onSubmit={handleSignup}>
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              placeholder="@mail.com"
-              id="email"
-              value={email}
-              className="input-field"
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-          </div>
+      <div className="row w-100">
+        <div className="col-md-11 mt-3">
+          <img src={RoberTeach} alt="" />
+        </div>
+        <div className="col d-flex justify-content-center mt-5">
+          <div className="login-container mt-5 ">
+            <form className="login-form" onSubmit={handleSignup}>
+              <div className="form-group">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  placeholder="@mail.com"
+                  id="email"
+                  value={email}
+                  className="input-field"
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+              </div>
 
-          <div className="form-group">
-            <label htmlFor="Nome de usuário">Nome de usuário</label>
-            <input
-              type="text"
-              id="text"
-              className="input-field"
-              placeholder="Nome de usuário"
-            />
-          </div>
+              <div className="form-group">
+                <label htmlFor="Nome de usuário">Nome de usuário</label>
+                <input
+                  type="text"
+                  id="text"
+                  className="input-field"
+                  placeholder="Nome de usuário"
+                />
+              </div>
 
-          <div className="form-group">
-            <label htmlFor="password">Senha</label>
-            <input
-              type="password"
-              placeholder="Senha"
-              id="password"
-              value={password}
-              className="input-field"
-              onChange={(e) => setPassword(e.target.value)}
-              required
-            />
-          </div>
+              <div className="form-group">
+                <label htmlFor="password">Senha</label>
+                <input
+                  type="password"
+                  placeholder="Senha"
+                  id="password"
+                  value={password}
+                  className="input-field"
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                />
+              </div>
 
-          <div className="form-group">
-            <label className="remember-me">
-              <input type="checkbox" />
-              Lembre-se de mim
-            </label>
+              <div className="form-group">
+                <label className="remember-me">
+                  <input type="checkbox" />
+                  Lembre-se de mim
+                </label>
+              </div>
+            </form>
+            <Link className="CriarP btn btn-primary-C" to={"../Beneficios"}>
+              <p>Criar</p>
+            </Link>
+            {error && <p>{error}</p>}
           </div>
-        </form>
-        <Link className="CriarP btn btn-primary-C" to={"../Beneficios"}>
-          <p>Criar</p>
-        </Link>
-        {error && <p>{error}</p>}
-      </div>
-      <div className="footer d-flex justify-content-center position-fixed">
-        <img src={rodape} alt="" />
+        </div>
       </div>
     </>
   );

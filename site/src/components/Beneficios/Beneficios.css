@@ -1,42 +1,20 @@
-.Sequencia {
-  gap: 1em;
-}
-
-.infoBene {
-  width: 22.5em;
-  gap: 2em;
-}
-
-.dizendo {
-  padding-right: 2em;
-}
-
-.falando {
-  width: 22em;
-  padding-right: 1em;
+.seta{
+  width: 25px;
 }
 
 .Beneficios {
-  gap: 1.5em;
+  gap: 2em;
 }
 
 .Benef {
   font-family: Itim;
-  display: flex;
-  flex-direction: row;
   gap: 2em;
-}
-
-.Benef img {
-  width: 45px;
-  height: 45px;
 }
 
 .FalaBene {
   border-radius: 28px;
   background-color: var(--infoB);
-  text-align: center;
-  width: 235px;
+  width: 300px;
   height: 50px;
   box-shadow: 0 4px 6px 0 rgba(217, 217, 217, 0.17);
 }
@@ -45,90 +23,81 @@
   color: var(--falaP);
 }
 
-.icons {
-  display: flex;
-  align-items: center;
-}
 
 .Journal {
-  font-size: 2.5em;
+  font-size: 2em;
   color: var(--icons);
 }
 
 .Lamp{
-  font-size: 2.5em;
+  font-size: 2em;
   color: #ce82ff;
 }
 
 .Clock{
-  font-size: 2.5em;
+  font-size: 2em;
   color: var(--icons);
 }
 
 .Finger{
-  font-size: 2.5em;
+  font-size: 2em;
   color: #ce82ff;
 }
 
 .Money{
-  font-size: 2.5em;
-  display: flex;
+  font-size: 2em;
   color: var(--icons);
 }
 
 .FalaBeneAbajur {
   border-radius: 28px;
   background-color: var(--infoB);
-  text-align: center;
-  width: 235px;
+  width: 300px;
   height: 50px;
   box-shadow: 0 4px 6px 0 rgba(217, 217, 217, 0.17);
 }
 
 .FalaBeneAbajur p {
-  width: 232px;
+  width: 300px;
   color: var(--falaP);
 }
 
 .FalaBeneRelogio {
   border-radius: 28px;
   background-color: var(--infoB);
-  text-align: center;
-  width: 240px;
+  width: 300px;
   height: 50px;
   box-shadow: 0 4px 6px 0 rgba(217, 217, 217, 0.17);
 }
 
 .FalaBeneRelogio p {
-  width: 232px;
+  width: 300px;
   color: var(--falaP);
 }
 
 .FalaBeneDedo {
   border-radius: 28px;
   background-color: var(--infoB);
-  text-align: center;
-  width: 240px;
+  width: 300px;
   height: 50px;
   box-shadow: 0 4px 6px 0 rgba(217, 217, 217, 0.17);
 }
 
 .FalaBeneDedo p {
-  width: 232px;
+  width: 300px;
   color: var(--falaP);
 }
 
 .FalaBeneDinheiro {
   border-radius: 28px;
   background-color: var(--infoB);
-  text-align: center;
-  width: 240px;
+  width: 300px;
   height: 50px;
   box-shadow: 0 4px 6px 0 rgba(217, 217, 217, 0.17);
 }
 
 .FalaBeneDinheiro p {
-  width: 232px;
+  width: 300px;
   color: var(--falaP);
 }
 
@@ -164,7 +133,7 @@
 }
 
 .EntrarAt {
-  gap: 10em;
+  gap: 15em;
 }
 
 .Paragrafo {

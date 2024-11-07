@@ -3,81 +3,88 @@ import "./Beneficios.css";
 import sequencia from "../../assets/linhaSequencia.svg";
 import setinha from "../../assets/setaSequencia.svg";
 import RobertinhoPiscando from "../../assets/robertinhoPiscando.png";
-import Abajur from "../../assets/abajur.svg";
-import Dedo from "../../assets/iconDedo.svg";
-import Separador from "../../assets/linha.svg";
 import SetinhaVoltar from "../../assets/setinhaVoltar.svg";
 import { Link } from "react-router-dom";
 
 const Beneficios = () => {
   return (
     <>
-      <div className="Sequencia d-flex justify-content-center mt-5">
-        <img src={setinha} alt="" />
-        <img src={sequencia} alt="" />
-      </div>
-      <div className="container d-flex justify-content-center align-items-center mt-4 infoBene">
-        <div className="falando box d-flex justify-content-center align-items-center">
-          <img src={RobertinhoPiscando} alt="" className="robertoPiscando" />
-        </div>
-        <div className="fala-R box">
-          <p className="text-center">
-            O RoberTeach possui diversos benefícios...
-          </p>
-        </div>
-      </div>
-      <div className="Beneficios d-flex justify-content-center flex-column align-items-center mt-5">
-        <div className="Benef mt-1">
-          <div className="icons">
-          <i className="bi bi-journal-bookmark Journal"></i>
-          </div>
-          <div className="FalaBene">
-            <p>Abre novas possibilidades de estudos na sala de aula</p>
+      <div className="row w-100 d-flex justify-content-center">
+        <div className="col-md-13">
+          <div className="d-flex justify-content-center mt-3 gap-4">
+            <img src={setinha} alt="" className="seta" />
+            <img src={sequencia} alt="" className="w-50" />
           </div>
         </div>
-        <div className="Benef">
-          <div className="icons">
-          <i className="bi bi-lamp-fill Lamp"></i>
+        <div className="col-md-6 pe-5 container d-flex  align-items-center mt-4">
+          <div className="w-100  box d-flex justify-content-center">
+            <img src={RobertinhoPiscando} alt="" />
           </div>
-          <div className="FalaBeneAbajur">
-            <p>Gestão educacional mais eficiente</p>
-          </div>
-        </div>
-        <div className="Benef">
-          <div className="icons">
-          <i className="bi bi-alarm-fill Clock"></i>
-          </div>
-          <div className="FalaBeneRelogio">
-            <p className="ps-2 pe-2">
-              Diminui a carga horária e a falta de tempo dos professores
+          <div className="fala-R box d-flex p-0">
+            <p className="text-center">
+              O RoberTeach possui diversos benefícios...
             </p>
           </div>
         </div>
-        <div className="Benef">
-          <div className="icons">
-          <i className="bi bi-hand-index-thumb Finger"></i>
+
+        <div className="Beneficios col-md-14 d-flex justify-content-center flex-column align-items-center mt-3">
+          <div className="Benef d-flex mt-4">
+            <div className="icons">
+              <i className="bi bi-journal-bookmark Journal"></i>
+            </div>
+            <div className="FalaBene text-center w-70">
+              <p className="paragrafoFb">
+                Abre novas possibilidades de estudos na sala de aula
+              </p>
+            </div>
           </div>
-          <div className="FalaBeneDedo">
-            <p>Aprendizagem mais interativa e dinâmica</p>
+          <div className="Benef d-flex">
+            <div className="d-flex align-items-center">
+              <i className="bi bi-lamp-fill Lamp"></i>
+            </div>
+            <div className="FalaBeneAbajur text-center">
+              <p className="paragrafoFb">Gestão educacional mais eficiente</p>
+            </div>
+          </div>
+          <div className="Benef d-flex">
+            <div className="d-flex align-items-center">
+              <i className="bi bi-alarm-fill Clock"></i>
+            </div>
+            <div className="FalaBeneRelogio text-center">
+              <p className="paragrafoFb ps-2 pe-2">
+                Diminui a carga horária e a falta de tempo dos professores
+              </p>
+            </div>
+          </div>
+          <div className="Benef d-flex">
+            <div className="d-flex align-items-center">
+              <i className="bi bi-hand-index-thumb Finger"></i>
+            </div>
+            <div className="FalaBeneDedo text-center">
+              <p className="paragrafoFb">
+                Aprendizagem mais interativa e dinâmica
+              </p>
+            </div>
+          </div>
+          <div className="Benef d-flex">
+            <div className="d-flex align-items-center">
+              <i className="bi bi-coin Money"></i>
+            </div>
+            <div className="FalaBeneDinheiro text-center">
+              <p className="paragrafoFb">
+                Redução de custos com tarefas manuais
+              </p>
+            </div>
           </div>
         </div>
-        <div className="Benef">
-          <div className="icons">
-          <i className="bi bi-coin Money"></i>
-          </div>
-          <div className="FalaBeneDinheiro">
-            <p>Redução de custos com tarefas manuais</p>
-          </div>
+        <div className="EntrarAt d-flex justify-content-center mt-4">
+          <img src={SetinhaVoltar} alt="" className="setinha" />
+          <Link className="btn btn-primary-A" to={"../Atividades"}>
+            <div className="d-flex justify-content-center mt-1">
+              <p>Prosseguir</p>
+            </div>
+          </Link>
         </div>
-      </div>
-      <img src={Separador} alt="" className="separador" />
-      <div className="EntrarAt d-flex justify-content-center mt-4">
-        <img src={SetinhaVoltar} alt="" className="setinha" />
-        <Link className="btn btn-primary-A" to={"../Atividades"}>
-          <div className="Paragrafo">
-            <p>Prosseguir</p>
-          </div>
-        </Link>
       </div>
     </>
   );

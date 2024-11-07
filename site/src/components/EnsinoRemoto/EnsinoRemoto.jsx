@@ -6,13 +6,13 @@ import RobertinhoPiscando from "../../assets/robertinhoPiscando.png";
 const EnsinoRemoto = () => {
   return (
     <>
-    <div className="row w-100">
-      <div className="Robertofalando col-md-11 d-flex align-items-center justify-content-center mt-5">
+    <div className="row w-100 d-flex justify-content-center mt-3">
+      <div className="Robertofalando col-md-10 mt-5 d-flex justify-content-center">
         <div className="col-md-6 d-flex justify-content-center align-items-center">
-          <div className="col-md-6 d-flex justify-content-center align-items-center g-3">
+          <div className="col-md-6 d-flex justify-content-center ">
             <img src={RobertinhoPiscando} alt="" className="robertoPiscando" />
           </div>
-          <div className="col m-0 me-3 d-flex justify-content-center align-items-center fala-R">
+          <div className="col-md-6 m-0 me-3 d-flex justify-content-center align-items-center fala-R">
             <p className="m-0 text-center">
               Olá, eu sou o Roberto Robô, venha conhecer o meu site!
             </p>
