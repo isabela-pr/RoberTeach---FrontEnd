@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./site/src/assets/img/logoRoberTech.png" width="250px">
+  <img src="/site/src/assets/logoRoberTech.png" width="250px">
 </p>
 <h1 align="center"> Projeto </h1>
 
@@ -37,7 +37,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Capa
 
 <p align="center">
-  <img src="site/src/assets/img/BannerRoberTech.png">
+  <img src="/site/src/assets/BannerRoberTech.png">
 </p>
 
 ## 🔖 Layout
