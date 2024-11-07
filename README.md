@@ -42,7 +42,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/design/EXO9bMbfDftiEB7ArcTelU/Untitled?node-id=0-1&t=UjYYOCpouAziUziF-1). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/design/EXO9bMbfDftiEB7ArcTelU/Untitled?node-id=613-9&node-type=canvas&t=S9Ng1cSfo9IgLSze-0). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## 📖 Resumo
 
