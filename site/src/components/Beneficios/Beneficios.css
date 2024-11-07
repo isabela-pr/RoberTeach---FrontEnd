@@ -45,9 +45,35 @@
   color: var(--falaP);
 }
 
-.image {
+.icons {
   display: flex;
   align-items: center;
+}
+
+.Journal {
+  font-size: 2.5em;
+  color: var(--icons);
+}
+
+.Lamp{
+  font-size: 2.5em;
+  color: #ce82ff;
+}
+
+.Clock{
+  font-size: 2.5em;
+  color: var(--icons);
+}
+
+.Finger{
+  font-size: 2.5em;
+  color: #ce82ff;
+}
+
+.Money{
+  font-size: 2.5em;
+  display: flex;
+  color: var(--icons);
 }
 
 .FalaBeneAbajur {

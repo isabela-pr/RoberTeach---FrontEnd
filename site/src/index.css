@@ -50,7 +50,6 @@ input {
   border: 2px solid var(--caixaFala);
   border-radius: 10px 10px 10px 0;
   color: var(--falaR);
-  width: 32em;
 }
 
 .footer {
@@ -106,7 +105,7 @@ input {
   --label: #000;
   --bgInput: #f5e6ff;
   --btnColorC: #fff;
-  --iconJournal: #000;
+  --icons: #000;
   --falaR: #000;
   --caixaFala: #616161;
   --infoB: #e3e3e3;
@@ -119,7 +118,13 @@ input {
   --customShadow: rgba(0, 0, 0, 0.15);
   --colorText: #333;
   --textColorER: #000;
-  --textColorEI: #000
+  --textColorEI: #000;
+  --bgAreaMat: #fff;
+  --borderAreaMat: #d9d9d9;
+  --textItem: #000;
+  --itemSelect: #f0e6ff;
+  --colorBtnP: #fff;
+  --colorBgP: #e0e0e0
 }
 
 @media (prefers-color-scheme= dark) {
@@ -135,7 +140,7 @@ input {
     --label: #fff;
     --bgInput: #3a294f;
     --btnColorC: #151323;
-    --iconJournal: #fff;
+    --icons: #fff;
     --falaR: #fff;
     --caixaFala: #404040;
     --infoB: #404040;
@@ -148,6 +153,13 @@ input {
     --customShadow: rgba(43, 42, 55, 1);
     --colorText: #fff;
     --textColorER: #fff;
-    --textColorEI: #fff
+    --textColorEI: #fff;
+    --bgAreaMat: #151323;
+    --borderAreaMat: #2b2a37;
+    --textItem: #fff;
+    --itemSelect: #392260;
+    --colorBtnP: #37464F;
+    --colorBgP: #262431
+
   }
 }

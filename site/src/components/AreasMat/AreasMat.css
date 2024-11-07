@@ -1,25 +1,37 @@
 .item {
   margin: 10px;
   padding: 15px;
-  background-color: #2c2c2e;
-  border: 1px solid #ffffff;
+  background-color: var(--bgAreaMat);
+  border: 0.2em solid var(--borderAreaMat);
+  border-radius: 11px;
   cursor: pointer;
-  color: #ffffff;
+  color: var(--textItem);
 }
 
 .item.selected {
-  background-color: #4b0082; /* Cor do item selecionado */
+  background-color: var(--itemSelect); /* Cor do item selecionado */
 }
 
 .proceed-button {
   padding: 10px 20px;
-  background-color: gray; /* Cor padrão do botão desativado */
-  color: #fff;
-  border: none;
+  background-color: var(--colorBgP); /* Cor padrão do botão desativado */
+  color: #37464f;
+  border-style: solid;
+  border-color: #37464f;
+  border-width: 2px 2px 4px 2px;
+  border-radius: 14px;
+  width: 120px;
   cursor: not-allowed;
+  font-family: Karla;
+  font-weight: 800;
 }
 
 .proceed-button.active {
-  background-color: #800080; /* Cor quando ativado */
+  background-color: #ce82ff; /* Cor quando ativado */
+  border-style: solid;
+  border-color: #9747ff;
+  border-width: 2px 2px 4px 2px;
+  border-radius: 14px;
+  color: var(--colorBtnP);
   cursor: pointer;
 }

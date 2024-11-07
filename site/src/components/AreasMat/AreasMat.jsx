@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./AreasMat.css";
+import { Link } from "react-router-dom";
 
 const AreasMat = () => {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -22,12 +23,16 @@ const AreasMat = () => {
         </div>
       ))}
 
-      <button
-        className={`proceed-button ${selectedItem ? "active" : ""}`}
-        disabled={!selectedItem}
-      >
-        PROSSEGUIR
-      </button>
+      {selectedItem ? (
+        <Link
+          to="/proxima-pagina" // O caminho da página de destino
+          className="proceed-button active"
+        >
+          PROSSEGUIR
+        </Link>
+      ) : (
+        <div className="proceed-button disabled d-flex justify-content-center">PROSSEGUIR</div>
+      )}
     </div>
   );
 };
