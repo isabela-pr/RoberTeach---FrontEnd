@@ -61,7 +61,7 @@ input {
 .EntrarBf {
   display: flex;
   justify-content: center;
-  gap: 10em;
+  /* gap: 10em; */
   margin-top: 3em;
 }
 

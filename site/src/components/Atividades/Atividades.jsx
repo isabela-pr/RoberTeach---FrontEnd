@@ -21,33 +21,41 @@ const Atividades = () => {
         <div className="Aprender d-flex justify-content-center">
           <p>Eu quero aprender...</p>
         </div>
-        <div className="Atividades d-flex justify-content-center align-items-center flex-column">
-          <div className="w-100 d-flex align-items-center justify-content-around ps-4 pe-4">
-            <img src={LP} alt="" />
-            <button className="customização-button">Língua Portuguesa</button>
+        <div className="col-md-10 d-flex justify-content-center align-items-center ps-5 ms-5 mt-5">
+          <div className=" col-md-6 d-flex justify-content-center flex-column">
+            <div className="d-flex justify-content-center align-items-center flex-column gap-4">
+              <div className="col d-flex align-items-center justify-content-between">
+                <img src={LP} alt="" />
+                <button className="customização-button">
+                  Língua Portuguesa
+                </button>
+              </div>
+              <div className="col d-flex align-items-center justify-content-between ">
+                <img src={Mat} alt="" />
+                <button className="customização-button">Matemática</button>
+              </div>
+              <div className="col d-flex align-items-center justify-content-between ">
+                <img src={LI} alt="" />
+                <button className="customização-button">Língua Inglesa</button>
+              </div>
+            </div>
           </div>
-          <div className="w-100 d-flex align-items-center justify-content-around ps-4 pe-4">
-            <img src={Mat} alt="" />
-            <button className="customização-button">Matemática</button>
-          </div>
-          <div className="w-100 d-flex align-items-center justify-content-around ps-4 pe-4">
-            <img src={LI} alt="" />
-            <button className="customização-button">Língua Inglesa</button>
-          </div>
-          <div className="w-100 d-flex align-items-center justify-content-around ps-4 pe-4">
-            <img src={Hist} alt="" />
-            <button className="customização-button">História</button>
-          </div>
-          <div className="w-100 d-flex align-items-center justify-content-around ps-4 pe-4">
-            <img src={Geo} alt="" />
-            <button className="customização-button">Geografia</button>
-          </div>
-          <div className="w-100 d-flex align-items-center justify-content-around ps-4 pe-4">
-            <img src={Bio} alt="" />
-            <button className="customização-button">Biologia</button>
+          <div className="col-md-5 d-flex justify-content-center flex-column gap-4">
+            <div className="col d-flex align-items-center justify-content-between">
+              <img src={Hist} alt="" />
+              <button className="customização-button">História</button>
+            </div>
+            <div className="col d-flex align-items-center justify-content-between ">
+              <img src={Geo} alt="" />
+              <button className="customização-button">Geografia</button>
+            </div>
+            <div className="col d-flex align-items-center justify-content-between ">
+              <img src={Bio} alt="" />
+              <button className="customização-button">Biologia</button>
+            </div>
           </div>
         </div>
-        <div className="EntrarBf d-flex justify-content-center ">
+        <div className="EntrarBf d-flex justify-content-center mt-5 p-5">
           <img src={SetinhaVoltar} alt="" className="setinha" />
           <Link className="btn btn-primary-A" to={"../AreasMat"}>
             <div className="Paragrafo">
