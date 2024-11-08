@@ -18,26 +18,23 @@
   transform: translateY(2px);
 }
 
-.Separador {
-  margin-bottom: 2em;
-}
-
-.Aprender {
-  margin-top: 0.3em;
+.EntrarBf{
+  gap: 15em;
 }
 
 .Aprender p {
   color: var(--aprender);
   font-family: Itim;
+  font-size: 20px;
 }
 
 
 .customização-button {
-  font-size: 10px;
+  font-size: 18px;
   font-family: Itim;
   background-color: var(--customBtnBg);
   width: 209px;
-  height: 50px;
+  height: 80px;
   border: 2px solid var(--customBorder);
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

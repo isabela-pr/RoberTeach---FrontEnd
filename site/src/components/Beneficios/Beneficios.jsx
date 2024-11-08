@@ -27,8 +27,8 @@ const Beneficios = () => {
           </div>
         </div>
 
-        <div className="Beneficios col-md-14 d-flex justify-content-center mt-4">
-          <div className="col-md-6 d-flex flex-column gap-4 ps-5">
+        <div className="Beneficios col-md-14 d-flex flex-md-row flex-column justify-content-center mt-4">
+          <div className="col-md-6 d-flex flex-column align-items-center gap-4 ps-5">
             <div className="Benef gap-4 d-flex mt-4">
               <div className="icons">
                 <i className="bi bi-journal-bookmark Journal"></i>
@@ -58,7 +58,7 @@ const Beneficios = () => {
               </div>
             </div>
           </div>
-          <div className=" d-flex flex-column gap-5 align-items-center mt-5 pt-1">
+          <div className="col-md-6 d-flex flex-column gap-4 align-items-center mt-md-5 mt-4 pt-md-1 ps-5">
             <div className="Benef gap-4 d-flex">
               <div className="d-flex align-items-center">
                 <i className="bi bi-hand-index-thumb Finger"></i>
