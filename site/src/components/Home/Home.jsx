@@ -59,16 +59,16 @@ const Home = () => {
       <Header />
       <Body />
       <div className="row w-100 mt-5">
-        <div className="col-md-6">
-          <nav className="campos box d-flex flex-column justify-content-center ">
+        <div className="col-md-6 d-flex justify-content-center mt-4">
+          <nav className="box flex-column">
             <Link className="ensinoRemoto btn border" to={"../EnsinoRemoto"}>
               <img src={ensinoRemoto} alt="" />
               Ensino Remoto
             </Link>
           </nav>
         </div>
-        <div className="col-md-6">
-          <nav className="campos box d-flex flex-column justify-content-center ">
+        <div className="col-md-6 d-flex justify-content-center mt-4">
+          <nav className="box flex-column ">
             <Link
               className="ensinoInstitucional btn border"
               to={"../EnsinoInstitucional"}
