@@ -28,10 +28,10 @@ const CriarConta = () => {
 
   return (
     <>
-      <div className="d-flex justify-content-center mt-5">
+      <div className="d-flex justify-content-center mt-5 pt-5">
         <img src={RoberTeach} alt="" />
       </div>
-      <div className="login-container mt-5 mt-5">
+      <div className="login-container mt-5 pt-5">
         <form className="login-form" onSubmit={handleSignup}>
           <div className="form-group">
             <label htmlFor="email">Email</label>

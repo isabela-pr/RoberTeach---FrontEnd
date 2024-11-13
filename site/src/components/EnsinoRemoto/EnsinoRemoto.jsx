@@ -8,8 +8,8 @@ const EnsinoRemoto = () => {
     <>
     <div className="row w-100 d-flex justify-content-center mt-3">
       <div className="Robertofalando col-md-10 mt-5 d-flex justify-content-center">
-        <div className="col-md-6 d-flex justify-content-center align-items-center">
-          <div className="col-md-6 d-flex justify-content-center ">
+        <div className="col-md-6 col-10 d-flex justify-content-center align-items-center">
+          <div className="col-md-6 col-6 d-flex justify-content-center ">
             <img src={RobertinhoPiscando} alt="" className="robertoPiscando" />
           </div>
           <div className="col-md-6 m-0 me-3 d-flex justify-content-center align-items-center fala-R">
