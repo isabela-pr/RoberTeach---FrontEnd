@@ -134,9 +134,6 @@ return (
         <p>Criar</p>
         </Link>
     </div>
-    <div className="footer d-flex justify-content-center position-fixed">
-      <img src={rodape} alt="" />
-    </div>
   </>
   )
 };

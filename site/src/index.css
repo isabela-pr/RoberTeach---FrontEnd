@@ -52,11 +52,6 @@ input {
   color: var(--falaR);
 }
 
-.footer {
-  background-color: #caa2ff;
-  bottom: 0;
-  width: 100%;
-}
 
 .EntrarBf {
   display: flex;
