@@ -10,6 +10,7 @@
 
 .item.selected {
   background-color: var(--itemSelect); /* Cor do item selecionado */
+  border: 0.2em solid #9747FF;
 }
 
 .proceed-button {
@@ -26,12 +27,13 @@
   font-weight: 800;
 }
 
-.proceed-button.active {
+.proceed-button-active {
   background-color: #ce82ff; /* Cor quando ativado */
   border-style: solid;
   border-color: #9747ff;
   border-width: 2px 2px 4px 2px;
   border-radius: 14px;
+  width: 120px;
   color: var(--colorBtnP);
   cursor: pointer;
 }

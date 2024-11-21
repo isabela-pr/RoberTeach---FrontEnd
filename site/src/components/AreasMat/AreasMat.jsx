@@ -26,7 +26,7 @@ const AreasMat = () => {
       {selectedItem ? (
         <Link
           to="/proxima-pagina" // O caminho da página de destino
-          className="proceed-button active"
+          className="proceed-button-active"
         >
           PROSSEGUIR
         </Link>
