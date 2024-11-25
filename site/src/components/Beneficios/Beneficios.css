@@ -2,7 +2,6 @@
   width: 25px;
 }
 
-
 .Benef {
   font-family: Itim;
 }
@@ -134,3 +133,26 @@
   justify-content: center;
   margin-top: 5px;
 }
+
+.custom-div {
+  background-color: #77767D; /* Cor do fundo */
+  color: #fff; /* Cor do texto */
+  border: solid 0.3em #88878D;
+  border-radius: 35px; /* Borda arredondada */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 1rem; /* Tamanho do texto */
+  text-align: center; /* Alinhamento do texto */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer; /* Cursor de mão ao passar por cima */
+}
+
+.custom-div:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente no hover */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5); /* Intensifica a sombra */
+}
+
+.bg-dark {
+  background-color: #1a1a2e; /* Cor de fundo escuro */
+}
+

@@ -31,52 +31,46 @@ const Beneficios = () => {
           <div className="col-md-6 d-flex flex-column align-items-center gap-4 ps-5">
             <div className="Benef gap-4 d-flex mt-4">
               <div className="icons">
-                <i className="bi bi-journal-bookmark Journal"></i>
+                <i className="bi bi-hand-index-thumb Finger"></i>
               </div>
-              <div className="FalaBene text-center w-70">
-                <p className="paragrafoFb">
-                  Abre novas possibilidades de estudos na sala de aula
-                </p>
+              <div className="d-flex justify-content-center align-items-center">
+                <div className="custom-div">
+                  Aprendizagem mais interativa e dinâmica
+                </div>
               </div>
             </div>
             <div className="Benef gap-4 d-flex">
               <div className="d-flex align-items-center">
                 <i className="bi bi-lamp-fill Lamp"></i>
               </div>
-              <div className="FalaBeneAbajur text-center">
-                <p className="paragrafoFb">Gestão educacional mais eficiente</p>
-              </div>
-            </div>
-            <div className="Benef gap-4 d-flex">
-              <div className="d-flex align-items-center">
-                <i className="bi bi-alarm-fill Clock"></i>
-              </div>
-              <div className="FalaBeneRelogio text-center">
-                <p className="paragrafoFb ps-2 pe-2">
-                  Diminui a carga horária e a falta de tempo dos professores
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 d-flex flex-column gap-4 align-items-center mt-md-5 mt-4 pt-md-1 ps-5">
-            <div className="Benef gap-4 d-flex">
-              <div className="d-flex align-items-center">
-                <i className="bi bi-hand-index-thumb Finger"></i>
-              </div>
-              <div className="FalaBeneDedo text-center">
-                <p className="paragrafoFb">
-                  Aprendizagem mais interativa e dinâmica
-                </p>
+              <div className="custom-div">
+                Gestão educacional mais eficiente
               </div>
             </div>
             <div className="Benef gap-4 d-flex">
               <div className="d-flex align-items-center">
                 <i className="bi bi-coin Money"></i>
               </div>
-              <div className="FalaBeneDinheiro text-center">
-                <p className="paragrafoFb">
-                  Redução de custos com tarefas manuais
-                </p>
+              <div className="custom-div">
+                Redução de custos com tarefas manuais
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 d-flex flex-column gap-4 align-items-center mt-md-5 mt-4 pt-md-1 ps-5">
+            <div className="Benef gap-4 d-flex">
+              <div className="d-flex align-items-center">
+                <i className="bi bi-journal-bookmark Journal"></i>
+              </div>
+              <div className="custom-div">
+                Abre novas possibilidades de estudos na sala de aula
+              </div>
+            </div>
+            <div className="Benef gap-4 d-flex">
+              <div className="d-flex align-items-center">
+                <i className="bi bi-alarm-fill Clock"></i>
+              </div>
+              <div className="custom-div">
+                Diminui a carga horária e falta de tempo dos professores
               </div>
             </div>
           </div>
