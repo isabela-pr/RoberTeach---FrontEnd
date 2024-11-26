@@ -1,12 +1,8 @@
 // import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import Header from "../Header/Header";
-import Body from "../Body/Body";
 import ensinoRemoto from "../../assets/EnsinoRemoto.png";
 import EnsinoInstitucional from "../../assets/EnsinoInstitucional.png";
-import Separador from "../../assets/linha.svg";
-import SetinhaVoltar from "../../assets/setinhaVoltar.svg";
 
 // import React, { useState, useEffect } from 'react';
 // import axios from 'axios';
@@ -56,8 +52,6 @@ const Home = () => {
 
   return (
     <>
-      <Header />
-      <Body />
       <div className="row w-100 mt-5">
         <div className="col-md-6 d-flex justify-content-center mt-4">
           <nav className="box flex-column">

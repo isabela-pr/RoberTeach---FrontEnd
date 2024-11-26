@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Question from "./Question";
-import ProgressBar from "./ProgressBar";
+import ProgressBar from "../ProgressBar/ProgressBar";
 
 const QuestionPage = () => {
   const [questions, setQuestions] = useState([]);
