@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
-import QuestionDisplay from "./QuestionDisplay";
-import Filtro from "./Filtro";
+import Question from "./Question";
+import ProgressBar from "./ProgressBar";
 
 const QuestionPage = () => {
   const [questions, setQuestions] = useState([]);
-  const [filteredQuestions, setFilteredQuestions] = useState([]); // Estado para questões filtradas
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [correctAnswers, setCorrectAnswers] = useState(0);
+  const [answered, setAnswered] = useState(false); //para controlar o estado da resposta
 
   useEffect(() => {
     const fetchData = async () => {
@@ -12,7 +14,6 @@ const QuestionPage = () => {
         const response = await fetch("./questions.json");
         const data = await response.json();
         setQuestions(data.questions);
-        setFilteredQuestions(data.questions); // Inicializa com todas as questões
       } catch (error) {
         console.error("Erro ao carregar o arquivo JSON:", error);
       }
@@ -20,41 +21,36 @@ const QuestionPage = () => {
     fetchData();
   }, []);
 
-  const handleFilter = (filters) => {
-    const filtered = questions.filter((question) => {
-      return (
-        (!filters.discipline || question.discipline === filters.discipline) &&
-        (!filters.year || question.year === filters.year)
-      );
-    });
-    setFilteredQuestions(filtered);
+  const handleAnswer = (questionIndex, isCorrect) => {
+    setAnswered(true);
+    if (isCorrect) {
+      setCorrectAnswers(correctAnswers + 1);
+    }
   };
 
-  const selectRandomQuestions = () => {
-    if (filteredQuestions.length < 10) {
-      //Seleciona todas questões filtradas caso haja menos de 10
-      return;
+  const nextQuestion = () => {
+    if (currentQuestionIndex < questions.length - 1) {
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
+      setAnswered(false);
     }
-    const shuffledQuestions = [...filteredQuestions].sort(
-      () => 0.5 - Math.random()
-    );
-    const randomTen = shuffledQuestions.slice(0, 10);
-    setFilteredQuestions(randomTen);
   };
+
+  const currentQuestion = questions[currentQuestionIndex];
 
   return (
     <div>
       <h1>ENEM Questions</h1>
-      <button onClick={selectRandomQuestions}>
-        Selecionar 10 Questões Aleatórias (após filtro)
-      </button>
-      <Filtro questions={questions} onFilter={handleFilter} />
-      {filteredQuestions.length > 0 && ( //Condicional para exibir apenas se houver questões filtradas
-        <QuestionDisplay questions={filteredQuestions} />
+      {questions.length > 0 && (
+        <>
+          <ProgressBar
+            currentQuestion={currentQuestionIndex + 1}
+            totalQuestions={questions.length}
+          />
+          <Question question={currentQuestion} onAnswer={handleAnswer} />
+          {answered && <button onClick={nextQuestion}>Próxima Questão</button>}
+        </>
       )}
-      {filteredQuestions.length === 0 && (
-        <p>Nenhuma questão encontrada com esses filtros.</p>
-      )}
+      {questions.length === 0 && <p>Carregando questões...</p>}
     </div>
   );
 };
