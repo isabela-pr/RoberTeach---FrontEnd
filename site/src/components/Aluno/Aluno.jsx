@@ -49,7 +49,7 @@ const Aluno = () => {
           </label>
         </div>
       </form>
-        <Link className="CriarP btn btn-primary-C" to={"../Beneficios"}>
+        <Link className="CriarP btn btn-primary-C" to={"../HomeAluno"}>
           <p>Criar</p>
         </Link>
     </div>

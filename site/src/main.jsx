@@ -20,6 +20,7 @@ import AreasMat from "./components/AreasMat/AreasMat.jsx";
 import Aluno from "./components/Aluno/Aluno.jsx";
 import Professor from "./components/Professor/Professor.jsx";
 import HomeInst from "./components/HomeInst/HomeInst.jsx";
+import HomeAluno from "./components/HomeAluno/HomeAluno.jsx";
 
 const router = createBrowserRouter([
   {
@@ -40,7 +41,8 @@ const router = createBrowserRouter([
       { path: "AreasMat", element: <AreasMat /> },
       { path: "Aluno", element: <Aluno/> },
       { path: "Professor", element: <Professor/>},
-      { path: "HomeInst", element: <HomeInst/>}
+      { path: "HomeInst", element: <HomeInst/>},
+      { path: "HomeAluno", element: <HomeAluno/>}
     ],
   },
 ]);
