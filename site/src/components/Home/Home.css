@@ -6,7 +6,7 @@
 
 
 
-.ensinoRemoto {
+.Math {
   /* padding-top: 7em; */
   font-family: Itim;
   display: inline-block;
@@ -17,7 +17,7 @@
   transition: box-shadow 0.3s;
 }
 
-.ensinoRemoto:hover {
+.Math:hover {
   box-shadow: 0 4px 10px rgba(151, 74, 255, 10);
   color: var(--textColorER);
   transform: translateY(2px);

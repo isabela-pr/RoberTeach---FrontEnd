@@ -1,9 +1,8 @@
+// Filtro.js
 import React from "react";
-import QuestionDisplay from "./QuestionDisplay"; // Importe o componente de exibição
+import QuestionDisplay from "./QuestionDisplay";
 
 const Filtro = ({ questions, onFilter }) => {
-  // Adicione props para questões e função de filtro
-
   return (
     <div>
       <h2>Filtro de Questões</h2>
@@ -12,8 +11,7 @@ const Filtro = ({ questions, onFilter }) => {
         <option value="matematica">Matemática</option>
         {/* Adicione outras opções */}
       </select>
-      {questions && <QuestionDisplay questions={questions} />}{" "}
-      {/*Exibe as questões filtradas */}
+      {questions && <QuestionDisplay questions={questions} />}
     </div>
   );
 };

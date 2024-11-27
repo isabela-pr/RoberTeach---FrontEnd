@@ -8,6 +8,7 @@ import "./index.css";
 import App from "./App.jsx";
 import Home from "./components/Home/Home.jsx";
 import Intro from "./components/Intro/Intro.jsx";
+import QuestionPage from "./components/Questions/QuestionPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Intro /> },
       { path: "Home", element: <Home /> },
+      { path: "QuestionPage", element: <QuestionPage /> },
     ],
   },
 ]);

@@ -1,3 +1,4 @@
+// ProgressBar.js
 import React from "react";
 
 const ProgressBar = ({ currentQuestion, totalQuestions }) => {
