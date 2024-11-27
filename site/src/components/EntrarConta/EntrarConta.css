@@ -1,28 +1,77 @@
+.quiz-container {
+  background-color: #151323;
+  min-height: 100vh;
+  padding: 20px;
+  color: white;
+}
 
-.EntrarP {
-  height: 40px;
+.bg-purple {
+  background-color: #6a0dad !important;
+}
+
+.bg-question{
+  background-color: #1D232E;
+  border: solid 5px #37464F;
+  border-radius: 50px;
+}
+
+.btn-purple {
+  background-color: #CE82FF;
+  color: black;
   border: none;
+  font-family: Karla;
+  font-weight: 1000;
+  transition: background-color 0.3s ease;
 }
 
-.EntrarP p {
-  font-family: Khula;
-  font-size: 25px;
+.btn-pular{
+  background-color: #1D232E;
+  color: #37464F;
+  border: solid #37464F;
+  font-weight: 1000;
+  font-family: Karla;
+  transition: background-color 0.3s ease;
+  border-radius: 15px;
+  border-top-width: 3px; 
+  border-left-width: 3px; 
+  border-right-width: 3px; 
+  border-bottom-width: 8px;
 }
 
-.btn-primary-E{
-  color: #fff;
-  border-color: #9747ff;
-  background-color: #ce82ff;
-  width: 239px;
-  height: 40px;
-  border-radius: 10px;
-  transition: box-shadow 0.3s;
+.btn-darkPurple{
+  background-color: #CE82FF;
+  color: black;
+  border: solid  #BF5BFF;
+  font-family: Karla;
+  font-weight: 1000;
+  transition: background-color 0.3s ease;
+  border-radius: 15px;
+  border-top-width: 3px; 
+  border-left-width: 3px; 
+  border-right-width: 3px; 
+  border-bottom-width: 8px;
 }
 
-.btn-primary-E:hover{
-  background-color: #ce82ff;
-  box-shadow: 0 4px 10px rgba(151, 74, 255, 10);
-  transform: translateY(2px);
+.btn-purple:hover {
+  background-color: #BF5BFF;
+  color: black;
 }
 
+.quiz-box {
+  width: 100%;
+  max-width: 600px;
+}
 
+.instruction {
+  font-size: 18px;
+  color: #ddd;
+}
+
+.feedback {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+footer {
+  max-width: 600px;
+}

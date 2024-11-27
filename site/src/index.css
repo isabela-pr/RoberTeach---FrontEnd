@@ -52,16 +52,11 @@ input {
   color: var(--falaR);
 }
 
-.footer {
-  background-color: #caa2ff;
-  bottom: 0;
-  width: 100%;
-}
 
 .EntrarBf {
   display: flex;
   justify-content: center;
-  gap: 10em;
+  /* gap: 10em; */
   margin-top: 3em;
 }
 

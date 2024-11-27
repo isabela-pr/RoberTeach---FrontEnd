@@ -16,7 +16,7 @@ const Intro = () => {
   return (
     <>
       <div className="body">
-        <div className="eye-container">
+        <div className="eye-container gap-5">
           <div className="eye">
             <div className="shine"></div>
           </div>

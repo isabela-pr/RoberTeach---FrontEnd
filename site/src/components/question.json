@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "question": "Qual é o valor de 2 + 2?",
+      "options": ["3", "4", "5", "6"],
+      "answer": "4",
+      "explanation": "A soma de 2 + 2 é igual a 4."
+    },
+    {
+      "id": 2,
+      "question": "Quanto é 3 * 3?",
+      "options": ["6", "7", "8", "9"],
+      "answer": "9",
+      "explanation": "A multiplicação de 3 * 3 resulta em 9."
+    }
+  ]
+  
