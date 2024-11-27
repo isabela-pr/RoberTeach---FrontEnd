@@ -119,7 +119,8 @@ input {
   --textItem: #000;
   --itemSelect: #f0e6ff;
   --colorBtnP: #fff;
-  --colorBgP: #e0e0e0
+  --colorBgP: #e0e0e0;
+  --selecione: black
 }
 
 @media (prefers-color-scheme= dark) {
@@ -154,7 +155,8 @@ input {
     --textItem: #fff;
     --itemSelect: #392260;
     --colorBtnP: #37464F;
-    --colorBgP: #262431
+    --colorBgP: #262431;
+    --selecione: white
 
   }
 }
