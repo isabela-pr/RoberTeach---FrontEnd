@@ -1,19 +1,18 @@
-// ProgressBar.js
 import React from "react";
 
 const ProgressBar = ({ currentQuestion, totalQuestions }) => {
-  const progress = (currentQuestion / totalQuestions) * 100;
+  const percentage = Math.round((currentQuestion / totalQuestions) * 100);
   return (
     <div className="progress mt-3">
       <div
-        className="progress-bar bg-success"
+        className="progress-bar"
         role="progressbar"
-        style={{ width: `${progress}%` }}
-        aria-valuenow={progress}
+        style={{ width: `${percentage}%` }}
+        aria-valuenow={percentage}
         aria-valuemin="0"
         aria-valuemax="100"
       >
-        Progresso: {progress.toFixed(0)}% ({currentQuestion}/{totalQuestions})
+        {percentage}%
       </div>
     </div>
   );
