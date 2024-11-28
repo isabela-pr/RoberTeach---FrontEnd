@@ -2,4 +2,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 
-/*  */
+/* Estilos gerais */
+body {
+    background-color: #f9f9f9; /* Fundo claro */
+    font-family: 'Roboto', sans-serif; /* Fonte limpa */
+    color: #333; /* Texto escuro */
+  }
+  
+  .card {
+    border: none; /* Remove bordas padrão do Bootstrap */
+    background-color: #fff; /* Fundo branco */
+    border-radius: 12px; /* Borda arredondada */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .progress {
+    height: 10px; /* Reduz a altura */
+    background-color: #e5e5e5; /* Cor do fundo */
+    border-radius: 5px; /* Borda arredondada */
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    background-color: #8B5CF6; /* Roxo principal */
+    border-radius: 5px; /* Borda arredondada */
+  }
+  
+  .btn-primary {
+    background-color: #8B5CF6; /* Roxo */
+    border-color: #8B5CF6;
+    border-radius: 8px; /* Borda arredondada */
+  }
+  
+  .btn-primary:hover {
+    background-color: #7A4FD3; /* Roxo mais escuro */
+    border-color: #7A4FD3;
+  }
+  
+  .text-success {
+    color: #4CAF50 !important; /* Verde para texto correto */
+  }
+  
+  .text-danger {
+    color: #F44336 !important; /* Vermelho para texto incorreto */
+  }
+  
+  .custom-question {
+    border: 1px solid #e0e0e0; /* Borda cinza claro */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+  }
+  
+  .custom-question:hover {
+    border-color: #8B5CF6; /* Realce roxo no hover */
+  }
+  

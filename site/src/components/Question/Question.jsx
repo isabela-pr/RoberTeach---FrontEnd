@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Question = ({
   question,
@@ -8,34 +8,46 @@ const Question = ({
   showAnswer,
 }) => {
   const [selectedAlternative, setSelectedAlternative] = useState(null);
+  const [errorMessage, setErrorMessage] = useState("");
+
+  useEffect(() => {
+    setSelectedAlternative(null);
+    setErrorMessage("");
+  }, [questionIndex]);
 
   const handleAnswerChange = (alternative) => {
     setSelectedAlternative(alternative);
+    setErrorMessage("");
   };
 
   const handleSubmit = () => {
+    if (!selectedAlternative) {
+      setErrorMessage(
+        "Por favor, selecione uma alternativa antes de confirmar."
+      );
+      return;
+    }
     onAnswer(questionIndex, selectedAlternative);
   };
 
-  const isAnswered = selectedAlternative !== null;
   const isCorrect = showAnswer && selectedAlternative?.isCorrect;
 
   return (
-    <div className="card mt-4">
+    <div className="custom-question card shadow-sm mt-4">
       <div className="card-body">
-        <h2 className="card-title">{question.title}</h2>
-        <p className="card-text">
+        <h4 className="text-primary">{question.title}</h4>
+        <p>
           <strong>Contexto:</strong> {question.context}
         </p>
-        <h3 className="mt-3">Alternativas:</h3>
-        <div className="form-check">
+        <h5 className="mt-3">Alternativas:</h5>
+        <div>
           {question.alternatives.map((alternative) => (
             <div key={alternative.letter} className="form-check">
               <input
                 className="form-check-input"
                 type="radio"
                 id={alternative.letter}
-                name="answer"
+                name={`answer-${questionIndex}`}
                 checked={selectedAlternative === alternative}
                 onChange={() => handleAnswerChange(alternative)}
                 disabled={showAnswer}
@@ -47,23 +59,25 @@ const Question = ({
           ))}
         </div>
         {showAnswer && (
-          <div>
+          <div className="mt-3">
             {isCorrect ? (
               <p className="text-success">Resposta correta!</p>
-            ) : isAnswered ? (
-              <p className="text-danger">Resposta incorreta.</p>
             ) : (
-              <p>Selecione uma alternativa</p>
+              <p className="text-danger">Resposta incorreta.</p>
             )}
           </div>
         )}
-        {!showAnswer && isAnswered && (
-          <button className="btn btn-primary mt-2" onClick={handleSubmit}>
-            Confirmar Resposta
-          </button>
-        )}
-        {!showAnswer && !isAnswered && (
-          <p>Selecione uma alternativa para continuar.</p>
+        {!showAnswer && (
+          <>
+            {errorMessage && <p className="text-danger mt-2">{errorMessage}</p>}
+            <button
+              className="btn btn-primary mt-3 px-4"
+              onClick={handleSubmit}
+              disabled={showAnswer}
+            >
+              Confirmar Resposta
+            </button>
+          </>
         )}
       </div>
     </div>
