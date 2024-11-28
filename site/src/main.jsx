@@ -4,6 +4,8 @@ import * as ReactDOM from "react-dom/client";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./index.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import App from "./App.jsx";
 import Home from "./components/Home/Home.jsx";
@@ -21,6 +23,8 @@ import Aluno from "./components/Aluno/Aluno.jsx";
 import Professor from "./components/Professor/Professor.jsx";
 import HomeInst from "./components/HomeInst/HomeInst.jsx";
 import HomeAluno from "./components/HomeAluno/HomeAluno.jsx";
+import PagAtRem from "./components/PaginaAtRemoto/PagAtRem.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -42,7 +46,8 @@ const router = createBrowserRouter([
       { path: "Aluno", element: <Aluno/> },
       { path: "Professor", element: <Professor/>},
       { path: "HomeInst", element: <HomeInst/>},
-      { path: "HomeAluno", element: <HomeAluno/>}
+      { path: "HomeAluno", element: <HomeAluno/>},
+      {path: "PagAtRem", element: <PagAtRem/>}
     ],
   },
 ]);

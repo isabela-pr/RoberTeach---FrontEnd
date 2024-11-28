@@ -5,7 +5,7 @@ import RoberTeach from "../../assets/RoberTeach.png"
 
 const Header = () => {
   return (
-    <div>
+    <div className="m-2">
       <img src={RoberTeach} alt="" />
     </div>
   );
