@@ -14,13 +14,15 @@ const QuestionPage = () => {
   const [error, setError] = useState(null);
   const [questionOrder, setQuestionOrder] = useState([]);
   const [reviewMode, setReviewMode] = useState(false);
+  const [reviewButtonText, setReviewButtonText] = useState("Finalizar Revisão");
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch("/questions.json");
-        if (!response.ok)
+        if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
+        }
         const data = await response.json();
         const shuffledQuestions = data.questions.sort(
           () => 0.5 - Math.random()
@@ -38,80 +40,77 @@ const QuestionPage = () => {
   }, []);
 
   const handleAnswer = (questionIndex, selectedAlternative) => {
-    // Salva a resposta selecionada
     setSelectedAnswers((prev) => ({
       ...prev,
       [questionIndex]: selectedAlternative,
     }));
-
     const isCorrect = selectedAlternative.isCorrect;
     if (!isCorrect) {
       setWrongAnswers((prev) => [...prev, questionIndex]);
     }
-    setShowAnswer(true); // Mostrar a resposta após a escolha
+    setShowAnswer(true);
   };
 
   const nextQuestion = () => {
     if (currentQuestionIndex < questionOrder.length - 1) {
       setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
-      setShowAnswer(false); // Resetar para a próxima questão
+      setShowAnswer(false);
+      setSelectedAnswers({});
     } else if (!reviewMode && wrongAnswers.length > 0) {
       setReviewMode(true);
       setQuestionOrder(wrongAnswers);
       setCurrentQuestionIndex(0);
-      setWrongAnswers([]); // Resetar erradas no modo revisão
-    } else {
-      alert("Parabéns! Você concluiu a atividade.");
+      setWrongAnswers([]);
+    } else if (
+      reviewMode &&
+      currentQuestionIndex === questionOrder.length - 1
+    ) {
+      setReviewButtonText("Ver Resultados");
       setShowResults(true);
     }
   };
 
-  const finishReview = () => {
-    setShowReview(false);
-    setShowResults(true);
-    setReviewMode(false); // Finalizar modo de revisão
-  };
-
-  // Função específica para revisão: limpa a resposta selecionada
-  const handleAnswerInReview = (questionIndex, selectedAlternative) => {
-    setSelectedAnswers((prev) => ({
-      ...prev,
-      [questionIndex]: selectedAlternative,
-    }));
-
-    const isCorrect = selectedAlternative.isCorrect;
-    if (!isCorrect) {
-      setWrongAnswers((prev) => [...prev, questionIndex]);
-    }
-    setShowAnswer(true); // Mostrar a resposta após a escolha
-  };
-
-  // Para garantir que a primeira questão da revisão não mostre a resposta automaticamente
-  useEffect(() => {
-    if (reviewMode) {
-      setShowAnswer(false); // Resetando showAnswer para false quando entra no modo de revisão
-    }
-  }, [reviewMode, currentQuestionIndex]);
-
   const progress = ((currentQuestionIndex + 1) / questionOrder.length) * 100;
 
   return (
-    <div className="container my-4">
+    <div className="container">
       <div className="row justify-content-center">
-        <div className="col-md-8">
-          <h1 className="mt-4 text-center text-primary">ENEM Questions</h1>
+        <div className="col-12">
+          <h1 className="mt-4 text-center">ENEM Questions</h1>
           {loading ? (
             <p className="mt-4 text-center">Carregando questões...</p>
           ) : error ? (
-            <p className="mt-4 text-center text-danger">Erro: {error}</p>
+            <p className="mt-4 text-center">Erro: {error}</p>
           ) : showResults ? (
-            <div className="text-center">
-              <p className="text-success">
+            <div>
+              <p>
                 Você acertou{" "}
                 {((questions.length - wrongAnswers.length) / questions.length) *
                   100}
                 % das questões!
               </p>
+            </div>
+          ) : showReview ? (
+            <div>
+              <h2>Revise as questões erradas:</h2>
+              <ul>
+                {wrongAnswers.map((index) => (
+                  <li key={`${index}-review`}>
+                    <Question
+                      key={`${index}-review`}
+                      question={questions[index]}
+                      onAnswer={handleAnswer}
+                      questionIndex={index}
+                      selectedAnswers={selectedAnswers}
+                      showAnswer={showAnswer}
+                      reviewMode={true}
+                    />
+                  </li>
+                ))}
+              </ul>
+              <button className="btn btn-primary mt-4" onClick={nextQuestion}>
+                {reviewButtonText}
+              </button>
             </div>
           ) : (
             <>
@@ -122,19 +121,16 @@ const QuestionPage = () => {
               <Question
                 question={questions[questionOrder[currentQuestionIndex]]}
                 onAnswer={handleAnswer}
-                questionIndex={currentQuestionIndex}
+                questionIndex={questionOrder[currentQuestionIndex]}
                 selectedAnswers={selectedAnswers}
                 showAnswer={showAnswer}
+                nextQuestion={nextQuestion}
+                isLastQuestion={
+                  currentQuestionIndex === questionOrder.length - 1
+                }
+                wrongAnswers={wrongAnswers.length}
+                reviewMode={reviewMode}
               />
-              <div className="d-flex justify-content-end">
-                <button
-                  className="btn btn-primary mt-3"
-                  onClick={nextQuestion}
-                  disabled={!selectedAnswers[currentQuestionIndex]}
-                >
-                  Próxima Questão
-                </button>
-              </div>
             </>
           )}
         </div>
