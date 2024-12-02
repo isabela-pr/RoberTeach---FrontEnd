@@ -20,18 +20,6 @@ body {
   padding: 20px;
 }
 
-.progress {
-  height: 10px; /* Reduz a altura */
-  background-color: #e5e5e5; /* Cor do fundo */
-  border-radius: 5px; /* Borda arredondada */
-  overflow: hidden;
-}
-
-.progress-bar {
-  background-color: #8b5cf6; /* Roxo principal */
-  border-radius: 5px; /* Borda arredondada */
-}
-
 .btn-primary {
   background-color: #8b5cf6; /* Roxo */
   border-color: #8b5cf6;
@@ -82,18 +70,6 @@ body {
   padding: 15px;
 }
 
-.progress {
-  height: 10px;
-  background-color: #e5e5e5;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.progress-bar {
-  background-color: #8b5cf6;
-  border-radius: 5px;
-}
-
 .btn-primary {
   background-color: #8b5cf6;
   border-color: #8b5cf6;
@@ -125,58 +101,13 @@ body {
   border-color: #8b5cf6; /* Realce roxo no hover */
 }
 
-/* Responsividade para telas pequenas e médias */
-@media (max-width: 1024px) {
-  body {
-    font-size: 14px;
-  }
-
-  .card {
-    margin: 5px;
-    padding: 10px;
-  }
-
-  .progress {
-    height: 8px;
-  }
-
-  .progress-bar {
-    font-size: 10px;
-  }
-
-  .btn {
-    padding: 5px 10px;
-    font-size: 12px;
-  }
-
-  .row,
-  .container {
-    padding: 0;
-    margin: 0;
-  }
-
-  h1 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-
-  h2 {
-    font-size: 16px;
-
-    .card-body {
-      padding: 10px;
-    }
-  }
+.progress-bar {
+  background: #ce82ff !important;
+  color: #CE82FF !important;
+  border-radius: 1em;
 }
 
-.feedback-message {
-  margin-top: 10px;
-}
-
-.feedback-message.correct {
-  color: green;
-}
-
-.feedback-message.incorrect {
-  color: red;
+.progress{
+  background-color: #48455F !important;
+  border-radius: 1em !important;
 }

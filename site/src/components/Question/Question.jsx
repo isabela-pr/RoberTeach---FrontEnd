@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Question = ({
   question,
@@ -16,6 +16,14 @@ const Question = ({
   const [feedbackMessage, setFeedbackMessage] = useState("");
   const [showFeedback, setShowFeedback] = useState(false);
   const [answerConfirmed, setAnswerConfirmed] = useState(false);
+
+  useEffect(() => {
+    setSelectedAlternative(null);
+    setErrorMessage("");
+    setFeedbackMessage("");
+    setShowFeedback(false);
+    setAnswerConfirmed(false);
+  }, [questionIndex]);
 
   const handleAnswerChange = (alternative) => {
     setSelectedAlternative(alternative);

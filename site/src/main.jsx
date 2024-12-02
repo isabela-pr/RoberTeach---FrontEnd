@@ -9,6 +9,8 @@ import App from "./App.jsx";
 import Home from "./components/Home/Home.jsx";
 import Intro from "./components/Intro/Intro.jsx";
 import QuestionPage from "./components/Questions/QuestionPage.jsx";
+import QuestionPageCN from "./components/Questions/QuestionPageCN.jsx";
+import QuestionPageCH from "./components/Questions/QuestionPageCH.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,8 @@ const router = createBrowserRouter([
       { path: "/", element: <Intro /> },
       { path: "Home", element: <Home /> },
       { path: "QuestionPage", element: <QuestionPage /> },
+      { path: "QuestionPageCN", element: <QuestionPageCN /> },
+      { path: "QuestionPageCH", element: <QuestionPageCH /> },
     ],
   },
 ]);

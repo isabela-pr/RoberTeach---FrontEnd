@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Question from "../Question/Question";
 import ProgressBar from "../ProgressBar/ProgressBar";
 
-const QuestionPage = () => {
+const QuestionPageCH = () => {
   const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState({});
@@ -19,7 +19,7 @@ const QuestionPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/questions.json");
+        const response = await fetch("/questionsCH.json");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -75,7 +75,7 @@ const QuestionPage = () => {
     <div className="container">
       <div className="row justify-content-center">
         <div className="col-12">
-          {/* <h1 className="mt-4 text-center">ENEM Questions</h1> */}
+          <h1 className="mt-4 text-center">ENEM Questions</h1>
           {loading ? (
             <p className="mt-4 text-center">Carregando questões...</p>
           ) : error ? (
@@ -138,4 +138,4 @@ const QuestionPage = () => {
   );
 };
 
-export default QuestionPage;
+export default QuestionPageCH;
