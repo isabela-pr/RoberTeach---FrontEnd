@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import robertoPiscando from "../../assets/robertinhoPiscando.png";
 
 const Question = ({
@@ -70,8 +70,8 @@ const Question = ({
         <div className="mt-3 box p-2 w-50">
           <img src={robertoPiscando} alt="Roberto" />
         </div>
-        <div className="fala-roberto box">
-          <p className="text-center">{robertoMessage}</p>
+        <div className="fala-roberto box d-flex justify-content-center align-items-center">
+          <p className="m-0">{robertoMessage}</p>
         </div>
       </div>
       <div className="card-body">

@@ -1,5 +1,4 @@
 // QuestionDisplay.js
-import React from "react";
 
 const QuestionDisplay = ({ questions }) => {
   return (

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Question from "../Question/Question";
 import ProgressBar from "../ProgressBar/ProgressBar";
 
@@ -69,7 +69,7 @@ const QuestionPage = () => {
     }
   };
 
-  const progress = ((currentQuestionIndex + 1) / questionOrder.length) * 100;
+  // const progress = ((currentQuestionIndex + 1) / questionOrder.length) * 100;
 
   return (
     <div className="container">
@@ -82,7 +82,7 @@ const QuestionPage = () => {
             <p className="mt-4 text-center">Erro: {error}</p>
           ) : showResults ? (
             <div>
-              <p>
+              <p className="text-center">
                 Você acertou{" "}
                 {((questions.length - wrongAnswers.length) / questions.length) *
                   100}
