@@ -10,7 +10,9 @@ const Body = () => {
           <img src={RobertoConfuso} alt="" />
         </div>
         <div className="fala-roberto box">
-          <p className="text-center">Em qual campo você deseja entrar?</p>
+          <p className="text-center">
+            Entre no campo abaixo e faça as questões do ENEM!
+          </p>
         </div>
       </div>
     </>

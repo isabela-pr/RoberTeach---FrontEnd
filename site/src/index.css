@@ -2,159 +2,160 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 
-.Robertofalando {
-  height: 50vh;
+/* Estilos gerais */
+body {
+  background-color: #f9f9f9; /* Fundo claro */
+  font-family: "Roboto", sans-serif; /* Fonte limpa */
+  color: #333; /* Texto escuro */
 }
 
-label {
-  color: var(--label);
+.cardQuestion {
+  border: none !important;
+  box-shadow: none !important;
 }
 
-.input-field {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 10px;
-  border: none;
-  background-color: var(--bgInput);
-  outline: none;
-  font-size: 16px;
-  color: var(--colorText);
-}
-
-.input-field::placeholder {
-  color: #bbb;
-}
-
-input {
-  font-family: Khula;
-}
-
-.fala-roberto {
-  width: 170px;
-  height: 3.5em;
-  background-color: var(--FalaRob);
-  border: 3px solid;
-  border-color: #616161;
-  border-radius: 10px 10px 10px 0;
-}
-
-.fala-roberto p {
-  font-family: Itim;
-  display: flex;
-  text-align: center;
-  color: var(--FalaRobP);
-}
-
-.fala-R {
-  border: 2px solid var(--caixaFala);
-  border-radius: 10px 10px 10px 0;
-  color: var(--falaR);
-}
-
-
-.EntrarBf {
-  display: flex;
-  justify-content: center;
-  /* gap: 10em; */
-  margin-top: 3em;
-}
-
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 1.5em;
-  height: 45vh;
-}
-
-.login-form {
-  background-color: var(--loginForm);
+.card-body {
   padding: 20px;
+  border: solid 10px #d9d9d9;
+  border-radius: 50px;
+  background-color: rgba(217, 217, 217, 0.2);
+}
+
+.formCheck {
+  background-color: rgba(217, 217, 217, 0.2) !important;
+}
+
+.form-check-input:checked {
+  background-color: #7a4fd3 !important;
+  box-shadow: 0 0 5px #f6e8ff !important;
+}
+
+.btn-primary {
+  background-color: #8b5cf6; /* Roxo */
+  border-color: #8b5cf6;
+  border-radius: 8px; /* Borda arredondada */
+}
+
+.btn-primary:hover {
+  background-color: #7a4fd3; /* Roxo mais escuro */
+  border-color: #7a4fd3;
+}
+
+.text-success {
+  color: #4caf50 !important; /* Verde para texto correto */
+}
+
+.text-danger {
+  color: #f44336 !important; /* Vermelho para texto incorreto */
+}
+
+.custom-question {
+  border: 1px solid #e0e0e0; /* Borda cinza claro */
+  border-radius: 10px; /* Borda arredondada */
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+
+.custom-question:hover {
+  border-color: #8b5cf6; /* Realce roxo no hover */
+}
+
+/* Ajustes gerais */
+body {
+  background-color: #f9f9f9; /* Fundo claro */
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+.card {
+  border: none;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.btn-primary {
+  background-color: rgba(106, 106, 106, 0.2) !important;
+  border: none !important;
+  border-bottom: 7px solid #37464f !important;
+  border-top: 3px solid #37464f !important;
+  border-left: 3px solid #37464f !important;
+  border-right: 3px solid #37464f !important;
+  border-radius: 30px !important;
+  color: #37464f !important;
+  font-family: Karla !important;
+  font-weight: bold !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 15px !important;
+  height: 3.5em !important;
+}
+
+.btn-primary:hover {
+  background-color: #ce82ff !important;
+  border: none !important;
+  border-bottom: 7px solid #9747ff !important;
+  border-top: 3px solid #9747ff !important;
+  border-left: 3px solid #9747ff !important;
+  border-right: 3px solid #9747ff !important;
+  border-radius: 24px !important;
+  color: #fff !important;
+}
+
+.btn-error {
+  background-color: rgba(255, 0, 0, 0.26) !important;
+  border: none !important;
+  border-bottom: 7px solid red !important;
+  border-top: 3px solid red !important;
+  border-left: 3px solid red !important;
+  border-right: 3px solid red !important;
+  border-radius: 30px !important;
+  color: red !important;
+  font-family: Karla !important;
+  font-weight: bold !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 15px !important;
+  height: 3.5em !important;
+}
+
+
+
+.text-fb {
+  color: #9747ff !important;
+}
+
+.text-danger {
+  color: #f44336 !important;
+}
+
+.custom-question {
+  border: 1px solid #e0e0e0;
   border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
 }
 
-.form-group {
-  margin-bottom: 25px;
+.custom-question:hover {
+  border-color: #8b5cf6; /* Realce roxo no hover */
 }
 
-.remember-me {
-  display: flex;
-  align-items: center;
+.progress-bar {
+  background: #ce82ff !important;
+  color: #ce82ff !important;
+  border-radius: 1em;
 }
 
-.remember-me input {
-  margin-right: 5px;
-}
-
-:root {
-  --bgColor: white;
-  --ColorBtn: white;
-  --FalaRob: white;
-  --FalaRobP: #000;
-  --entrarContaP: #fff;
-  --bgCriarConta: #e5e5e5;
-  --criarContaStroke: #d2d2d2;
-  --loginForm: #fff;
-  --label: #000;
-  --bgInput: #f5e6ff;
-  --btnColorC: #fff;
-  --icons: #000;
-  --falaR: #000;
-  --caixaFala: #616161;
-  --infoB: #e3e3e3;
-  --falaP: #000;
-  --btnProsseguir: #fff;
-  --aprender: rgba(0, 0, 0, 0.29);
-  --customBtnBg: #fff;
-  --customBorder: #e0e0e0;
-  --customColor: black;
-  --customShadow: rgba(0, 0, 0, 0.15);
-  --colorText: #333;
-  --textColorER: #000;
-  --textColorEI: #000;
-  --bgAreaMat: #fff;
-  --borderAreaMat: #d9d9d9;
-  --textItem: #000;
-  --itemSelect: #f0e6ff;
-  --colorBtnP: #fff;
-  --colorBgP: #e0e0e0
-}
-
-@media (prefers-color-scheme= dark) {
-  :root {
-    --bgColor: #151323;
-    --ColorBtn: black;
-    --FalaRob: #151323;
-    --FalaRobP: #fff;
-    --entrarContaP: #000;
-    --bgCriarConta: #6b6a72;
-    --criarContaStroke: #404040;
-    --loginForm: #151323;
-    --label: #fff;
-    --bgInput: #3a294f;
-    --btnColorC: #151323;
-    --icons: #fff;
-    --falaR: #fff;
-    --caixaFala: #404040;
-    --infoB: #404040;
-    --falaP: #fff;
-    --btnProsseguir: #000;
-    --aprender: #fff;
-    --customBtnBg: #151323;
-    --customBorder: #2b2a37;
-    --customColor: white;
-    --customShadow: rgba(43, 42, 55, 1);
-    --colorText: #fff;
-    --textColorER: #fff;
-    --textColorEI: #fff;
-    --bgAreaMat: #151323;
-    --borderAreaMat: #2b2a37;
-    --textItem: #fff;
-    --itemSelect: #392260;
-    --colorBtnP: #37464F;
-    --colorBgP: #262431
-
-  }
+.progress {
+  background-color: #48455f !important;
+  border-radius: 1em !important;
 }

@@ -1,7 +1,5 @@
 import React from "react";
-import EnsinoRemoto from "../EnsinoRemoto/EnsinoRemoto";
-import { Link } from "react-router-dom";
-import RoberTeach from "../../assets/RoberTeach.png"
+import RoberTeach from "../../assets/RoberTeach.png";
 
 const Header = () => {
   return (
