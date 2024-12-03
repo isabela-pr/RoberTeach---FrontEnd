@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Question from "../Question/Question";
 import ProgressBar from "../ProgressBar/ProgressBar";
 
