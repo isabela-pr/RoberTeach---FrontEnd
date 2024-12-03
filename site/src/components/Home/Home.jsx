@@ -17,7 +17,7 @@ const Home = () => {
         <div className="row">
           <div className="col-md-3 mb-3">
             <Link
-              className="Math btn border w-100 d-flex flex-column justify-content-center align-items-center gap-1"
+              className="Math btn w-100 d-flex flex-column justify-content-center align-items-center gap-1"
               to={"../QuestionPage"}
             >
               <img src={Math} alt="" className="mt-2" />
@@ -26,7 +26,7 @@ const Home = () => {
           </div>
           <div className="col-md-3 mb-3">
             <Link
-              className="Math btn border w-100 d-flex flex-column justify-content-center align-items-center gap-1"
+              className="Math btn w-100 d-flex flex-column justify-content-center align-items-center gap-1"
               to={"../QuestionPage"}
             >
               <img src={LP} alt="" className="mt-2 w-25" />
@@ -35,7 +35,7 @@ const Home = () => {
           </div>
           <div className="col-md-3 mb-3">
             <Link
-              className="Math btn border w-100 d-flex flex-column justify-content-center align-items-center gap-1"
+              className="Math btn w-100 d-flex flex-column justify-content-center align-items-center gap-1"
               to={"../QuestionPageCH"}
             >
               <img src={CH} alt="" className="mt-2 w-25" />
@@ -44,7 +44,7 @@ const Home = () => {
           </div>
           <div className="col-md-3 mb-3">
             <Link
-              className="Math btn border w-100 d-flex flex-column justify-content-center align-items-center gap-1"
+              className="Math btn w-100 d-flex flex-column justify-content-center align-items-center gap-1"
               to={"../QuestionPageCN"}
             >
               <img src={CN} alt="" className="mt-2 w-25" />

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import robertoPiscando from "../../assets/robertinhoPiscando.png";
 
 const Question = ({
   question,
@@ -16,6 +17,9 @@ const Question = ({
   const [feedbackMessage, setFeedbackMessage] = useState("");
   const [showFeedback, setShowFeedback] = useState(false);
   const [answerConfirmed, setAnswerConfirmed] = useState(false);
+  const [robertoMessage, setRobertoMessage] = useState(
+    "Responda as questões corretamente!"
+  );
 
   useEffect(() => {
     setSelectedAlternative(null);
@@ -23,6 +27,7 @@ const Question = ({
     setFeedbackMessage("");
     setShowFeedback(false);
     setAnswerConfirmed(false);
+    setRobertoMessage("Responda as questões corretamente!");
   }, [questionIndex]);
 
   const handleAnswerChange = (alternative) => {
@@ -42,19 +47,33 @@ const Question = ({
     onAnswer(questionIndex, selectedAlternative);
 
     const feedback = selectedAlternative.isCorrect
-      ? "Parabéns! Você acertou esta questão."
+      ? "Parabéns! Você acertou esta questão.🥳"
       : "Ops! Resposta incorreta.";
 
     setFeedbackMessage(feedback);
     setShowFeedback(true);
     setAnswerConfirmed(true);
+
+    if (selectedAlternative.isCorrect) {
+      setRobertoMessage("Parabéns! Você acertou!");
+    } else {
+      setRobertoMessage("Ops! Tente novamente!");
+    }
   };
 
   const isCorrect = showAnswer && selectedAlternative?.isCorrect;
   const showThisFeedback = showAnswer && showFeedback;
 
   return (
-    <div className="card mt-4">
+    <div className="cardQuestion card mt-4">
+      <div className="container d-flex justify-content-center align-items-center mb-3">
+        <div className="mt-3 box p-2 w-50">
+          <img src={robertoPiscando} alt="Roberto" />
+        </div>
+        <div className="fala-roberto box">
+          <p className="text-center">{robertoMessage}</p>
+        </div>
+      </div>
       <div className="card-body">
         <h2 className="card-title">{question.title}</h2>
         <p className="card-text">
@@ -65,7 +84,7 @@ const Question = ({
           {question.alternatives.map((alternative) => (
             <div key={alternative.letter} className="form-check">
               <input
-                className="form-check-input"
+                className="form-check-input formCheck"
                 type="radio"
                 id={alternative.letter}
                 name={`answer-${questionIndex}`}
@@ -84,7 +103,7 @@ const Question = ({
 
         {showThisFeedback && (
           <p
-            className={`feedback-message ${
+            className={`feedback-message text-fb mt-3 ${
               isCorrect ? "correct" : "incorrect"
             }`}
           >
@@ -94,7 +113,10 @@ const Question = ({
 
         <div className="d-flex justify-content-end gap-2 mt-3">
           {!answerConfirmed && !showAnswer && (
-            <button className="btn btn-primary" onClick={handleSubmit}>
+            <button
+              className="btn btn-primary flex justify-center items-center h-10 px-6"
+              onClick={handleSubmit}
+            >
               Confirmar Resposta
             </button>
           )}
@@ -103,7 +125,7 @@ const Question = ({
             <>
               {!isLastQuestion && (
                 <button
-                  className="btn btn-secondary"
+                  className="btn btn-primary"
                   onClick={nextQuestion}
                   disabled={!showAnswer}
                 >
@@ -113,7 +135,7 @@ const Question = ({
 
               {isLastQuestion && wrongAnswers > 0 && (
                 <button
-                  className="btn btn-secondary"
+                  className="btn btn-error"
                   onClick={nextQuestion}
                   disabled={!showAnswer}
                 >

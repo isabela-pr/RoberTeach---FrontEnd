@@ -75,7 +75,7 @@ const QuestionPageCN = () => {
     <div className="container">
       <div className="row justify-content-center">
         <div className="col-12">
-          <h1 className="mt-4 text-center">ENEM Questions</h1>
+          {/* <h1 className="mt-4 text-center">ENEM Questions</h1> */}
           {loading ? (
             <p className="mt-4 text-center">Carregando questões...</p>
           ) : error ? (
