@@ -24,15 +24,7 @@ const Home = () => {
               <p className="mt-2">Questões Matemática</p>
             </Link>
           </div>
-          <div className="col-md-3 mb-3">
-            <Link
-              className="Math btn w-100 d-flex flex-column justify-content-center align-items-center gap-1"
-              to={"../QuestionPage"}
-            >
-              <img src={LP} alt="" className="mt-2 w-25" />
-              <p className="mt-2">Questões Língua Portuguesa</p>
-            </Link>
-          </div>
+
           <div className="col-md-3 mb-3">
             <Link
               className="Math btn w-100 d-flex flex-column justify-content-center align-items-center gap-1"
