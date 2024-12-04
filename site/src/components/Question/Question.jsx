@@ -66,7 +66,7 @@ const Question = ({
   };
 
   const isCorrect = showAnswer && selectedAlternative?.isCorrect;
-  const showThisFeedback = showAnswer && showFeedback;
+  const showThisFeedback = reviewMode || showFeedback; // Ajustando para revisão
 
   return (
     <div className="cardQuestion card mt-4">
@@ -94,7 +94,7 @@ const Question = ({
                 name={`answer-${questionIndex}`}
                 checked={selectedAlternative === alternative}
                 onChange={() => handleAnswerChange(alternative)}
-                disabled={!reviewMode && (answerConfirmed || showAnswer)}
+                disabled={reviewMode && answerConfirmed} // Permite selecionar apenas uma vez na revisão
               />
               <label className="form-check-label" htmlFor={alternative.letter}>
                 {alternative.letter}: {alternative.text}
@@ -165,5 +165,4 @@ const Question = ({
     </div>
   );
 };
-
 export default Question;

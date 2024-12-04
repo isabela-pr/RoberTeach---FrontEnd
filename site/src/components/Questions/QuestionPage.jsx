@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Question from "../Question/Question";
 import ProgressBar from "../ProgressBar/ProgressBar";
 
-const QuestionPage = () => {
+const QuestionPageCN = () => {
   const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState({});
@@ -44,14 +44,11 @@ const QuestionPage = () => {
       ...prev,
       [questionIndex]: selectedAlternative,
     }));
-
-    if (!reviewMode) {
-      const isCorrect = selectedAlternative.isCorrect;
-      if (!isCorrect) {
-        setWrongAnswers((prev) => [...prev, questionIndex]);
-      }
-      setShowAnswer(true);
+    const isCorrect = selectedAlternative.isCorrect;
+    if (!isCorrect) {
+      setWrongAnswers((prev) => [...prev, questionIndex]);
     }
+    setShowAnswer(true);
   };
 
   const nextQuestion = () => {
@@ -64,13 +61,15 @@ const QuestionPage = () => {
       setCurrentQuestionIndex(0);
       setWrongAnswers([]);
     } else if (
-      reviewMode ||
+      reviewMode &&
       currentQuestionIndex === questionOrder.length - 1
     ) {
       setReviewButtonText("Ver Resultados");
       setShowResults(true);
     }
   };
+
+  const progress = ((currentQuestionIndex + 1) / questionOrder.length) * 100;
 
   return (
     <div className="container">
@@ -83,7 +82,7 @@ const QuestionPage = () => {
             <p className="mt-4 text-center">Erro: {error}</p>
           ) : showResults ? (
             <div>
-              <p className="text-center">
+              <p>
                 Você acertou{" "}
                 {((questions.length - wrongAnswers.length) / questions.length) *
                   100}
@@ -139,4 +138,4 @@ const QuestionPage = () => {
   );
 };
 
-export default QuestionPage;
+export default QuestionPageCN;
