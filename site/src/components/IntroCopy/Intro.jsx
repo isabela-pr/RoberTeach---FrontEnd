@@ -5,13 +5,13 @@ import { useNavigate } from "react-router-dom";
 const Intro = () => {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      navigate("Home");
-    }, 5000);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     navigate("Home");
+  //   }, 5000);
 
-    return () => clearTimeout(timer);
-  }, [navigate]);
+  //   return () => clearTimeout(timer);
+  // }, [navigate]);
 
   return (
     <>

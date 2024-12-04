@@ -2,7 +2,6 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
 import Math from "../../assets/math.svg";
-import LP from "../../assets/livro.svg";
 import CN from "../../assets/bequer.svg";
 import CH from "../../assets/cerebro.svg";
 import Header from "../Header/Header";

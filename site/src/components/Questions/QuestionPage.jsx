@@ -44,11 +44,14 @@ const QuestionPage = () => {
       ...prev,
       [questionIndex]: selectedAlternative,
     }));
-    const isCorrect = selectedAlternative.isCorrect;
-    if (!isCorrect) {
-      setWrongAnswers((prev) => [...prev, questionIndex]);
+
+    if (!reviewMode) {
+      const isCorrect = selectedAlternative.isCorrect;
+      if (!isCorrect) {
+        setWrongAnswers((prev) => [...prev, questionIndex]);
+      }
+      setShowAnswer(true);
     }
-    setShowAnswer(true);
   };
 
   const nextQuestion = () => {
@@ -61,15 +64,13 @@ const QuestionPage = () => {
       setCurrentQuestionIndex(0);
       setWrongAnswers([]);
     } else if (
-      reviewMode &&
+      reviewMode ||
       currentQuestionIndex === questionOrder.length - 1
     ) {
       setReviewButtonText("Ver Resultados");
       setShowResults(true);
     }
   };
-
-  // const progress = ((currentQuestionIndex + 1) / questionOrder.length) * 100;
 
   return (
     <div className="container">

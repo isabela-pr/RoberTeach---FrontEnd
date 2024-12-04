@@ -22,13 +22,17 @@ const Question = ({
   );
 
   useEffect(() => {
-    setSelectedAlternative(null);
+    if (reviewMode && selectedAnswers[questionIndex]) {
+      setSelectedAlternative(selectedAnswers[questionIndex]);
+    } else {
+      setSelectedAlternative(null);
+    }
     setErrorMessage("");
     setFeedbackMessage("");
     setShowFeedback(false);
     setAnswerConfirmed(false);
     setRobertoMessage("Responda as questões corretamente!");
-  }, [questionIndex]);
+  }, [questionIndex, reviewMode]);
 
   const handleAnswerChange = (alternative) => {
     setSelectedAlternative(alternative);
@@ -90,7 +94,7 @@ const Question = ({
                 name={`answer-${questionIndex}`}
                 checked={selectedAlternative === alternative}
                 onChange={() => handleAnswerChange(alternative)}
-                disabled={answerConfirmed || showAnswer}
+                disabled={!reviewMode && (answerConfirmed || showAnswer)}
               />
               <label className="form-check-label" htmlFor={alternative.letter}>
                 {alternative.letter}: {alternative.text}
@@ -136,7 +140,10 @@ const Question = ({
               {isLastQuestion && wrongAnswers > 0 && (
                 <button
                   className="btn btn-error"
-                  onClick={nextQuestion}
+                  onClick={() => {
+                    setAnswerConfirmed(false);
+                    nextQuestion();
+                  }}
                   disabled={!showAnswer}
                 >
                   Revisar Erros

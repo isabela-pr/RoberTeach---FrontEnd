@@ -4,6 +4,9 @@ import * as ReactDOM from "react-dom/client";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 import App from "./App.jsx";
 import Home from "./components/Home/Home.jsx";
