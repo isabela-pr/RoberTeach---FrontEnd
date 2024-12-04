@@ -25,28 +25,32 @@ const Atividades = () => {
           <div className=" col-md-5">
             <div className="d-flex justify-content-center flex-column gap-md-4 gap-2">
               <div className="col-10 d-flex align-items-center justify-content-between">
-                <img src={LP} alt="" />
                 <button className="customização-button">
+                  <img src={LP} alt="" />
                   Língua Portuguesa
                 </button>
               </div>
               <div className="col-10 d-flex align-items-center justify-content-between ">
-                <img src={Mat} alt="" />
-                <button className="customização-button">Matemática</button>
+                <button className="customização-button">
+                  <img src={Mat} alt="" />
+                  Matemátic a
+                </button>
               </div>
               <div className="col-md-8 col-10 d-flex align-items-center justify-content-between">
-              <img src={Hist} alt="" />
-              <button className="customização-button">História</button>
-            </div>
+                <button className="customização-button">
+                  <img src={Hist} alt="" />
+                  Ciências Humanas
+                </button>
+              </div>
 
-            <div className="col-md-8 col-10 d-flex align-items-center justify-content-between ">
-              <img src={Bio} alt="" />
-              <button className="customização-button">Biologia</button>
-            </div>
-
+              <div className="col-md-8 col-10 d-flex align-items-center justify-content-between ">
+                <button className="customização-button">
+                  <img src={Bio} alt="" />
+                  Ciências da Natureza
+                </button>
+              </div>
             </div>
           </div>
-
         </div>
         <div className="EntrarBf d-flex justify-content-center mt-md-5 mt-4">
           <img src={SetinhaVoltar} alt="" className="setinha" />
