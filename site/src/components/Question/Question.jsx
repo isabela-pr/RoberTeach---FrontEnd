@@ -35,6 +35,7 @@ const Question = ({
   }, [questionIndex, reviewMode]);
 
   const handleAnswerChange = (alternative) => {
+    if (answerConfirmed) return; // Impede mudança de resposta após confirmação
     setSelectedAlternative(alternative);
     setErrorMessage("");
     setShowFeedback(false);
@@ -94,7 +95,7 @@ const Question = ({
                 name={`answer-${questionIndex}`}
                 checked={selectedAlternative === alternative}
                 onChange={() => handleAnswerChange(alternative)}
-                disabled={reviewMode && answerConfirmed} // Permite selecionar apenas uma vez na revisão
+                disabled={answerConfirmed} // Desabilita a mudança após confirmação
               />
               <label className="form-check-label" htmlFor={alternative.letter}>
                 {alternative.letter}: {alternative.text}

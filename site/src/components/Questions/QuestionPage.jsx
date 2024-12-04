@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Question from "../Question/Question";
 import ProgressBar from "../ProgressBar/ProgressBar";
 
-const QuestionPageCN = () => {
+const QuestionPage = () => {
   const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState({});
@@ -138,4 +138,4 @@ const QuestionPageCN = () => {
   );
 };
 
-export default QuestionPageCN;
+export default QuestionPage;
