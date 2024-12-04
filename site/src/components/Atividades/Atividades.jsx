@@ -34,26 +34,19 @@ const Atividades = () => {
                 <img src={Mat} alt="" />
                 <button className="customização-button">Matemática</button>
               </div>
-              <div className="col-10 d-flex align-items-center justify-content-between ">
-                <img src={LI} alt="" />
-                <button className="customização-button">Língua Inglesa</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 d-flex justify-content-center flex-column mt-md-0 mt-2 gap-md-4 gap-2">
-            <div className="col-md-8 col-10 d-flex align-items-center justify-content-between">
+              <div className="col-md-8 col-10 d-flex align-items-center justify-content-between">
               <img src={Hist} alt="" />
               <button className="customização-button">História</button>
             </div>
-            <div className="col-md-8 col-10 d-flex align-items-center justify-content-between ">
-              <img src={Geo} alt="" />
-              <button className="customização-button">Geografia</button>
-            </div>
+
             <div className="col-md-8 col-10 d-flex align-items-center justify-content-between ">
               <img src={Bio} alt="" />
               <button className="customização-button">Biologia</button>
             </div>
+
+            </div>
           </div>
+
         </div>
         <div className="EntrarBf d-flex justify-content-center mt-md-5 mt-4">
           <img src={SetinhaVoltar} alt="" className="setinha" />
