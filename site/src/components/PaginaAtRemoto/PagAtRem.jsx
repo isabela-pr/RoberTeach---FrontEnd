@@ -10,13 +10,12 @@ const PagAtRem = () => {
         // Adicione mais atividades aqui
       ];
    return(
-    <div className="duolingo-container">
-    <header className="duolingo-header">
-      {/* Cabeçalho com logo, nome do usuário, pontos etc. */}
-      {/* <img src="/logo.png" alt="Logo" /> */}
+    <div className="roberteach-container">
+    <header className="roberteach-header">
+
       <h1>Rober Teach</h1>
     </header>
-    <main className="duolingo-main">
+    <main className="roberteach-main">
       <ul className="activity-list">
         {activities.map((activity) => (
           <li key={activity.id} className={`activity-item ${activity.completed ? 'completed' : ''}`}>
