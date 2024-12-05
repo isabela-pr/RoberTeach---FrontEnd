@@ -1,12 +1,14 @@
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const Modal = ({
+const ModalCustom = ({
   show,
   handleClose,
   resultsData,
   correctAnswers,
   incorrectAnswers,
   clearState,
+  returnRoute,
 }) => {
   const navigate = useNavigate();
 
@@ -15,7 +17,7 @@ const Modal = ({
   const handleRefazer = () => {
     clearState();
     handleClose();
-    navigate("/QuestionPage"); // Navega diretamente para a página de questões
+    navigate(returnRoute);
   };
 
   const handleVoltar = () => {
@@ -86,4 +88,4 @@ const Modal = ({
   );
 };
 
-export default Modal;
+export default ModalCustom;

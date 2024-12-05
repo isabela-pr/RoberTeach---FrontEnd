@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Question from "../Question/Question";
 import ProgressBar from "../ProgressBar/ProgressBar";
-import Modal from "../Modal/Modal";
+import ModalCustom from "../Modal/ModalCustom";
 
 const QuestionPageCN = () => {
   const [questions, setQuestions] = useState([]);
@@ -124,14 +124,16 @@ const QuestionPageCN = () => {
               />
             </>
           )}
-          <Modal
+          <ModalCustom
             show={showModal}
             handleClose={() => setShowModal(false)}
             resultsData={resultsData}
             correctAnswers={correctAnswers}
             incorrectAnswers={incorrectAnswers}
             clearState={clearState}
-          />{" "}
+            returnRoute="/QuestionPageCN" // Rota para QuestionPageCH
+          />
+          
           {/* Passando clearState para o Modal */}
         </div>
       </div>
