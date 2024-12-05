@@ -1,18 +1,44 @@
-import React from "react";
 import "./PagAtRem.css";
 import { Link } from "react-router-dom";
-import eng1 from "../../assets/eng01.png";
+import fundo01 from "../../assets/AtivRem01.png";
+import fundo02 from "../../assets/AtivRem02.png";
 
 const PagAtRem = () => {
-  const activities = [
-    { id: 1, title: "Unidade 1", completed: true, path: "/unidade1" }, // exemplo de rota para unidade 1
-    { id: 2, title: "Unidade 2", completed: false, path: "/unidade2" },
-    { id: 3, title: "Unidade 3", completed: true, path: "/unidade3" },
-    // Adicione mais atividades aqui
-  ];
+  function handleButtonClick() {
+    const gear = document.querySelector(".gear");
+    const nextLesson = document.getElementById("nextLesson");
+
+    // Gira a engrenagem
+    gear.style.transform = "rotate(100deg)";
+
+    // Mostra o texto "Próxima Lição"
+    setTimeout(() => {
+      nextLesson.classList.add("show");
+    }, 500);
+  }
   return (
-    <div className="roberteach-container">
+    <div
+      className="roberteach-container"
+      style={{
+        backgroundImage: `url(${fundo01})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        height: "100vh",
+      }}
+    >
+      <header className="roberteach-header">
+        <h1>Rober Teach</h1>
+      </header>
+
       <div className="row">
+        <div className="col-9 ">
+          <div className="next-lesson hidden" id="nextLesson">
+            Próxima Lição
+          </div>
+        </div>
+        <div className="col-3 gear-button" onClick={handleButtonClick}>
+          <div className="gear"></div>
+        </div>
       </div>
     </div>
   );
