@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Question from "../Question/Question";
 import ProgressBar from "../ProgressBar/ProgressBar";
-import Modal from "../Modal/ModalCustom";
 import ModalCustom from "../Modal/ModalCustom";
 
 const QuestionPage = () => {
@@ -10,12 +9,12 @@ const QuestionPage = () => {
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [wrongAnswers, setWrongAnswers] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [showResults, setShowResults] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [error, setError] = useState(null);
   const [questionOrder, setQuestionOrder] = useState([]);
   const [reviewMode, setReviewMode] = useState(false);
   const [reviewButtonText, setReviewButtonText] = useState("Finalizar Revisão");
+  const [showResultsButton, setShowResultsButton] = useState(false); // Novo estado
 
   useEffect(() => {
     const fetchData = async () => {
@@ -63,7 +62,13 @@ const QuestionPage = () => {
       reviewMode &&
       currentQuestionIndex === questionOrder.length - 1
     ) {
-      setShowModal(true);
+      setShowResultsButton(true);
+    } else if (
+      !reviewMode &&
+      wrongAnswers.length === 0 &&
+      currentQuestionIndex === questionOrder.length - 1
+    ) {
+      setShowResultsButton(true);
     }
   };
 
@@ -85,8 +90,8 @@ const QuestionPage = () => {
     setSelectedAnswers({});
     setWrongAnswers([]);
     setReviewMode(false);
-    setQuestionOrder([...Array(10).keys()]); // Reordena as questões
-    setShowResults(false);
+    setQuestionOrder([...Array(10).keys()]);
+    setShowResultsButton(false);
     setShowModal(false);
   };
 
@@ -98,13 +103,6 @@ const QuestionPage = () => {
             <p className="mt-4 text-center">Carregando questões...</p>
           ) : error ? (
             <p className="mt-4 text-center">Erro: {error}</p>
-          ) : showResults ? (
-            <p>
-              Você acertou{" "}
-              {((questions.length - wrongAnswers.length) / questions.length) *
-                100}
-              % das questões!
-            </p>
           ) : (
             <>
               <ProgressBar
@@ -123,6 +121,14 @@ const QuestionPage = () => {
                 wrongAnswers={wrongAnswers.length}
                 reviewMode={reviewMode}
               />
+              {showResultsButton && ( // Conditionally render the button
+                <button
+                  className="btn btn-primary"
+                  onClick={() => setShowModal(true)}
+                >
+                  Ver Resultados
+                </button>
+              )}
             </>
           )}
           <ModalCustom
@@ -132,7 +138,7 @@ const QuestionPage = () => {
             correctAnswers={correctAnswers}
             incorrectAnswers={incorrectAnswers}
             clearState={clearState}
-            returnRoute="/QuestionPage" // Rota para QuestionPage
+            returnRoute="/QuestionPage"
           />
         </div>
       </div>
