@@ -25,33 +25,30 @@ const Atividades = () => {
           <div className=" col-md-5">
             <div className="d-flex justify-content-center flex-column gap-md-4 gap-2">
               <div className="col-10 d-flex align-items-center justify-content-between">
-                <img src={LP} alt="" />
                 <button className="customização-button">
+                  <img src={LP} alt="" />
                   Língua Portuguesa
                 </button>
               </div>
               <div className="col-10 d-flex align-items-center justify-content-between ">
-                <img src={Mat} alt="" />
-                <button className="customização-button">Matemática</button>
+                <button className="customização-button">
+                  <img src={Mat} alt="" />
+                  Matemátic a
+                </button>
               </div>
-              <div className="col-10 d-flex align-items-center justify-content-between ">
-                <img src={LI} alt="" />
-                <button className="customização-button">Língua Inglesa</button>
+              <div className="col-md-8 col-10 d-flex align-items-center justify-content-between">
+                <button className="customização-button">
+                  <img src={Hist} alt="" />
+                  Ciências Humanas
+                </button>
               </div>
-            </div>
-          </div>
-          <div className="col-md-6 d-flex justify-content-center flex-column mt-md-0 mt-2 gap-md-4 gap-2">
-            <div className="col-md-8 col-10 d-flex align-items-center justify-content-between">
-              <img src={Hist} alt="" />
-              <button className="customização-button">História</button>
-            </div>
-            <div className="col-md-8 col-10 d-flex align-items-center justify-content-between ">
-              <img src={Geo} alt="" />
-              <button className="customização-button">Geografia</button>
-            </div>
-            <div className="col-md-8 col-10 d-flex align-items-center justify-content-between ">
-              <img src={Bio} alt="" />
-              <button className="customização-button">Biologia</button>
+
+              <div className="col-md-8 col-10 d-flex align-items-center justify-content-between ">
+                <button className="customização-button">
+                  <img src={Bio} alt="" />
+                  Ciências da Natureza
+                </button>
+              </div>
             </div>
           </div>
         </div>

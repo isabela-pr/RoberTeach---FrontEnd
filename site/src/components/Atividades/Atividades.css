@@ -41,6 +41,11 @@
   color: var(--customColor);
   cursor: pointer;
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  justify-content: center;
+  
 }
 
 .customização-button:hover {
