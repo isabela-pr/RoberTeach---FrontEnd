@@ -1,12 +1,11 @@
-import { useState, useEffect } from "react";
-import robertoPiscando from "../../assets/robertinhoPiscando.png";
+import React, { useState, useEffect } from "react";
+import robertoPiscando from "../../assets/robertinhoPiscando.png"
 
 const Question = ({
   question,
   onAnswer,
   questionIndex,
   selectedAnswers,
-  showAnswer,
   nextQuestion,
   isLastQuestion,
   wrongAnswers,
@@ -35,7 +34,7 @@ const Question = ({
   }, [questionIndex, reviewMode]);
 
   const handleAnswerChange = (alternative) => {
-    if (answerConfirmed) return; // Impede mudança de resposta após confirmação
+    if (answerConfirmed) return;
     setSelectedAlternative(alternative);
     setErrorMessage("");
     setShowFeedback(false);
@@ -66,14 +65,14 @@ const Question = ({
     }
   };
 
-  const isCorrect = showAnswer && selectedAlternative?.isCorrect;
-  const showThisFeedback = reviewMode || showFeedback; // Ajustando para revisão
+  const isCorrect = selectedAlternative?.isCorrect;
+  const showThisFeedback = reviewMode || showFeedback;
 
   return (
     <div className="cardQuestion card mt-4">
       <div className="container d-flex justify-content-center align-items-center mb-3">
         <div className="mt-3 box p-2 w-50">
-          <img src={robertoPiscando} alt="Roberto" />
+          <img src={robertoPiscando} alt="Roberto" />{" "}
         </div>
         <div className="fala-roberto box d-flex justify-content-center align-items-center">
           <p className="m-0">{robertoMessage}</p>
@@ -95,7 +94,7 @@ const Question = ({
                 name={`answer-${questionIndex}`}
                 checked={selectedAlternative === alternative}
                 onChange={() => handleAnswerChange(alternative)}
-                disabled={answerConfirmed} // Desabilita a mudança após confirmação
+                disabled={answerConfirmed}
               />
               <label className="form-check-label" htmlFor={alternative.letter}>
                 {alternative.letter}: {alternative.text}
@@ -107,56 +106,27 @@ const Question = ({
         {errorMessage && <p className="text-danger mt-2">{errorMessage}</p>}
 
         {showThisFeedback && (
-          <p
-            className={`feedback-message text-fb mt-3 ${
-              isCorrect ? "correct" : "incorrect"
-            }`}
-          >
+          <p className={`text-fb mt-3 ${isCorrect ? "correct" : "incorrect"}`}>
             {feedbackMessage}
           </p>
         )}
 
         <div className="d-flex justify-content-end gap-2 mt-3">
-          {!answerConfirmed && !showAnswer && (
-            <button
-              className="btn btn-primary flex justify-center items-center h-10 px-6"
-              onClick={handleSubmit}
-            >
+          {!answerConfirmed && (
+            <button className="btn btn-primary" onClick={handleSubmit}>
               Confirmar Resposta
             </button>
           )}
-
-          {showAnswer && (
+          {answerConfirmed && (
             <>
               {!isLastQuestion && (
-                <button
-                  className="btn btn-primary"
-                  onClick={nextQuestion}
-                  disabled={!showAnswer}
-                >
+                <button className="btn btn-primary" onClick={nextQuestion}>
                   Próxima Questão
                 </button>
               )}
-
-              {isLastQuestion && wrongAnswers > 0 && (
-                <button
-                  className="btn btn-error"
-                  onClick={() => {
-                    setAnswerConfirmed(false);
-                    nextQuestion();
-                  }}
-                  disabled={!showAnswer}
-                >
-                  Revisar Erros
-                </button>
-              )}
-              {isLastQuestion && wrongAnswers === 0 && (
-                <button
-                  className="btn btn-secondary"
-                  onClick={nextQuestion}
-                  disabled={!showAnswer}
-                >
-                  Ver Resultados
+              {isLastQuestion && (
+                <button className="btn btn-primary-revisao" onClick={nextQuestion}>
+                  {reviewMode ? "Ver Resultados" : "Revisar Erros"}
                 </button>
               )}
             </>
@@ -166,4 +136,5 @@ const Question = ({
     </div>
   );
 };
+
 export default Question;

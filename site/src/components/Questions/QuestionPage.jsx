@@ -1,16 +1,16 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Question from "../Question/Question";
 import ProgressBar from "../ProgressBar/ProgressBar";
+import Modal from "../Modal/Modal";
 
-const QuestionPageCN = () => {
+const QuestionPage = () => {
   const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [wrongAnswers, setWrongAnswers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showResults, setShowResults] = useState(false);
-  const [showReview, setShowReview] = useState(false);
-  const [showAnswer, setShowAnswer] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const [error, setError] = useState(null);
   const [questionOrder, setQuestionOrder] = useState([]);
   const [reviewMode, setReviewMode] = useState(false);
@@ -21,7 +21,7 @@ const QuestionPageCN = () => {
       try {
         const response = await fetch("/questions.json");
         if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
+          throw new Error(`Erro HTTP! status: ${response.status}`);
         }
         const data = await response.json();
         const shuffledQuestions = data.questions.sort(
@@ -30,7 +30,7 @@ const QuestionPageCN = () => {
         setQuestions(shuffledQuestions.slice(0, 10));
         setQuestionOrder([...Array(10).keys()]);
       } catch (error) {
-        console.error("Error fetching JSON:", error);
+        console.error("Erro ao buscar JSON:", error);
         setError(error.message);
       } finally {
         setLoading(false);
@@ -48,13 +48,11 @@ const QuestionPageCN = () => {
     if (!isCorrect) {
       setWrongAnswers((prev) => [...prev, questionIndex]);
     }
-    setShowAnswer(true);
   };
 
   const nextQuestion = () => {
     if (currentQuestionIndex < questionOrder.length - 1) {
       setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
-      setShowAnswer(false);
     } else if (!reviewMode && wrongAnswers.length > 0) {
       setReviewMode(true);
       setQuestionOrder(wrongAnswers);
@@ -64,53 +62,48 @@ const QuestionPageCN = () => {
       reviewMode &&
       currentQuestionIndex === questionOrder.length - 1
     ) {
-      setReviewButtonText("Ver Resultados");
-      setShowResults(true);
+      setShowModal(true);
     }
   };
 
   const progress = ((currentQuestionIndex + 1) / questionOrder.length) * 100;
 
+  const correctAnswers = questions.length - wrongAnswers.length;
+  const incorrectAnswers = wrongAnswers.length;
+
+  const resultsData = questions.map((question, index) => ({
+    question: question.title,
+    isCorrect: !wrongAnswers.includes(index),
+    selectedAnswer: selectedAnswers[index]?.text || null,
+    correctAnswer:
+      question.alternatives.find((alt) => alt.isCorrect)?.text || null,
+  }));
+
+  const clearState = () => {
+    setCurrentQuestionIndex(0);
+    setSelectedAnswers({});
+    setWrongAnswers([]);
+    setReviewMode(false);
+    setQuestionOrder([...Array(10).keys()]); // Reordena as questões
+    setShowResults(false);
+    setShowModal(false);
+  };
+
   return (
     <div className="container">
       <div className="row justify-content-center">
         <div className="col-12">
-          {/* <h1 className="mt-4 text-center">ENEM Questions</h1> */}
           {loading ? (
             <p className="mt-4 text-center">Carregando questões...</p>
           ) : error ? (
             <p className="mt-4 text-center">Erro: {error}</p>
           ) : showResults ? (
-            <div>
-              <p>
-                Você acertou{" "}
-                {((questions.length - wrongAnswers.length) / questions.length) *
-                  100}
-                % das questões!
-              </p>
-            </div>
-          ) : showReview ? (
-            <div>
-              <h2>Revise as questões erradas:</h2>
-              <ul>
-                {wrongAnswers.map((index) => (
-                  <li key={`${index}-review`}>
-                    <Question
-                      key={`${index}-review`}
-                      question={questions[index]}
-                      onAnswer={handleAnswer}
-                      questionIndex={index}
-                      selectedAnswers={selectedAnswers}
-                      showAnswer={showAnswer}
-                      reviewMode={true}
-                    />
-                  </li>
-                ))}
-              </ul>
-              <button className="btn btn-primary mt-4" onClick={nextQuestion}>
-                {reviewButtonText}
-              </button>
-            </div>
+            <p>
+              Você acertou{" "}
+              {((questions.length - wrongAnswers.length) / questions.length) *
+                100}
+              % das questões!
+            </p>
           ) : (
             <>
               <ProgressBar
@@ -122,7 +115,6 @@ const QuestionPageCN = () => {
                 onAnswer={handleAnswer}
                 questionIndex={questionOrder[currentQuestionIndex]}
                 selectedAnswers={selectedAnswers}
-                showAnswer={showAnswer}
                 nextQuestion={nextQuestion}
                 isLastQuestion={
                   currentQuestionIndex === questionOrder.length - 1
@@ -132,10 +124,19 @@ const QuestionPageCN = () => {
               />
             </>
           )}
+          <Modal
+            show={showModal}
+            handleClose={() => setShowModal(false)}
+            resultsData={resultsData}
+            correctAnswers={correctAnswers}
+            incorrectAnswers={incorrectAnswers}
+            clearState={clearState}
+          />{" "}
+          {/* Passando clearState para o Modal */}
         </div>
       </div>
     </div>
   );
 };
 
-export default QuestionPageCN;
+export default QuestionPage;

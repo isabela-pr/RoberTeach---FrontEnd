@@ -30,17 +30,6 @@ body {
   box-shadow: 0 0 5px #f6e8ff !important;
 }
 
-.btn-primary {
-  background-color: #8b5cf6; /* Roxo */
-  border-color: #8b5cf6;
-  border-radius: 8px; /* Borda arredondada */
-}
-
-.btn-primary:hover {
-  background-color: #7a4fd3; /* Roxo mais escuro */
-  border-color: #7a4fd3;
-}
-
 .text-success {
   color: #4caf50 !important; /* Verde para texto correto */
 }
@@ -87,7 +76,7 @@ body {
   border-top: 3px solid #37464f !important;
   border-left: 3px solid #37464f !important;
   border-right: 3px solid #37464f !important;
-  border-radius: 30px !important;
+  border-radius: 20px !important;
   color: #37464f !important;
   font-family: Karla !important;
   font-weight: bold !important;
@@ -105,7 +94,7 @@ body {
   border-top: 3px solid #9747ff !important;
   border-left: 3px solid #9747ff !important;
   border-right: 3px solid #9747ff !important;
-  border-radius: 24px !important;
+  border-radius: 20px !important;
   color: #fff !important;
 }
 
@@ -116,7 +105,7 @@ body {
   border-top: 3px solid red !important;
   border-left: 3px solid red !important;
   border-right: 3px solid red !important;
-  border-radius: 30px !important;
+  border-radius: 20px !important;
   color: red !important;
   font-family: Karla !important;
   font-weight: bold !important;
@@ -127,7 +116,52 @@ body {
   height: 3.5em !important;
 }
 
+.btn-primary-revisao {
+  background-color: rgba(255, 49, 49, 0.5) !important;
+  border: none !important;
+  border-bottom: 7px solid #FF3131 !important;
+  border-top: 3px solid #FF3131 !important;
+  border-left: 3px solid #FF3131 !important;
+  border-right: 3px solid #FF3131 !important;
+  border-radius: 20px !important;
+  color: #FF3131 !important;
+  font-family: Karla !important;
+  font-weight: bold !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 15px !important;
+  height: 3.5em !important;
+}
 
+.btn-primary-back {
+  background-color: rgba(106, 106, 106, 0.2) !important;
+  border: none !important;
+  border-bottom: 7px solid #37464f !important;
+  border-top: 3px solid #37464f !important;
+  border-left: 3px solid #37464f !important;
+  border-right: 3px solid #37464f !important;
+  border-radius: 20px !important;
+  color: #37464f !important;
+  font-family: Karla !important;
+  font-weight: bold !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 15px !important;
+  height: 3.5em !important;
+}
+
+.btn-primary-back:hover{
+  background-color: #ce82ff !important;
+  border: none !important;
+  border-bottom: 7px solid #9747ff !important;
+  border-top: 3px solid #9747ff !important;
+  border-left: 3px solid #9747ff !important;
+  border-right: 3px solid #9747ff !important;
+  border-radius: 20px !important;
+  color: #fff !important;
+}
 
 .text-fb {
   color: #9747ff !important;
