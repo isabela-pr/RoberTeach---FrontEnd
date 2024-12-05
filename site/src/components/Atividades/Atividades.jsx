@@ -21,9 +21,9 @@ const Atividades = () => {
         <div className="Aprender text-center">
           <p>Eu quero aprender...</p>
         </div>
-        <div className="col-md-11 col-10 flex-column flex-md-row d-flex justify-content-center ps-5 ms-5 mt-md-5 mt-1">
+        <div className="  flex-column flex-md-row d-flex justify-content-center ps-5 ms-5 mt-md-5 mt-1">
           <div className=" col-md-5">
-            <div className="d-flex justify-content-center flex-column gap-md-4 gap-2">
+            <div className="d-flex justify-content-center flex-column gap-md-4 gap-5">
               <div className="col-10 d-flex align-items-center justify-content-between">
                 <button className="customização-button">
                   <img src={LP} alt="" />
@@ -33,7 +33,7 @@ const Atividades = () => {
               <div className="col-10 d-flex align-items-center justify-content-between ">
                 <button className="customização-button">
                   <img src={Mat} alt="" />
-                  Matemátic a
+                  Matemática
                 </button>
               </div>
               <div className="col-md-8 col-10 d-flex align-items-center justify-content-between">
@@ -42,7 +42,6 @@ const Atividades = () => {
                   Ciências Humanas
                 </button>
               </div>
-
               <div className="col-md-8 col-10 d-flex align-items-center justify-content-between ">
                 <button className="customização-button">
                   <img src={Bio} alt="" />
@@ -52,8 +51,9 @@ const Atividades = () => {
             </div>
           </div>
         </div>
-        <div className="EntrarBf d-flex justify-content-center mt-md-5 mt-4">
-          <img src={SetinhaVoltar} alt="" className="setinha" />
+        <div className="EntrarBf ">
+
+
           <Link className="btn btn-primary-A" to={"../AreasMat"}>
             <div className="Paragrafo">
               <p>Prosseguir</p>

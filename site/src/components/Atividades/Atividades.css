@@ -19,7 +19,10 @@
 }
 
 .EntrarBf{
-  gap: 15em;
+  gap: 60%;
+  display: flex;
+ margin-top: 20%;
+ margin-left: 2%;
 }
 
 .Aprender p {
@@ -56,3 +59,4 @@
   outline: none;
 }
 
+ 
