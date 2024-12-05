@@ -119,12 +119,12 @@ body {
 .btn-primary-revisao {
   background-color: rgba(255, 49, 49, 0.5) !important;
   border: none !important;
-  border-bottom: 7px solid #FF3131 !important;
-  border-top: 3px solid #FF3131 !important;
-  border-left: 3px solid #FF3131 !important;
-  border-right: 3px solid #FF3131 !important;
+  border-bottom: 7px solid #ff3131 !important;
+  border-top: 3px solid #ff3131 !important;
+  border-left: 3px solid #ff3131 !important;
+  border-right: 3px solid #ff3131 !important;
   border-radius: 20px !important;
-  color: #FF3131 !important;
+  color: #ff3131 !important;
   font-family: Karla !important;
   font-weight: bold !important;
   display: flex !important;
@@ -152,7 +152,7 @@ body {
   height: 3.5em !important;
 }
 
-.btn-primary-back:hover{
+.btn-primary-back:hover {
   background-color: #ce82ff !important;
   border: none !important;
   border-bottom: 7px solid #9747ff !important;
