@@ -117,14 +117,14 @@ body {
 }
 
 .btn-primary-revisao {
-  background-color: rgba(255, 49, 49, 0.5) !important;
+  background-color: rgba(117, 53, 200, 0.47) !important;
   border: none !important;
-  border-bottom: 7px solid #ff3131 !important;
-  border-top: 3px solid #ff3131 !important;
-  border-left: 3px solid #ff3131 !important;
-  border-right: 3px solid #ff3131 !important;
+  border-bottom: 7px solid #7535c8 !important;
+  border-top: 3px solid #7535c8 !important;
+  border-left: 3px solid #7535c8 !important;
+  border-right: 3px solid #7535c8 !important;
   border-radius: 20px !important;
-  color: #ff3131 !important;
+  color: #7535c8 !important;
   font-family: Karla !important;
   font-weight: bold !important;
   display: flex !important;
