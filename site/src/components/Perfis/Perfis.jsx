@@ -25,8 +25,12 @@ const Perfis = () => {
           <div className="localPerfil">
             <div className="column1">
               <div className="col-md-6 col-12 mb-3">
-                <Link to={"../PaginaAtRemoto"}>
-                <img src={avatarGiovana} alt="Giovana" className="img-perfil" />
+                <Link to={"../PagAtRem"}>
+                  <img
+                    src={avatarGiovana}
+                    alt="Giovana"
+                    className="img-perfil"
+                  />
                 </Link>
                 <p>Giovana</p>
               </div>
@@ -63,12 +67,12 @@ const Perfis = () => {
             </div>
           </div>
           <div className="botoes">
-          <Link to={""} className="Editar btn btn-primary-e ">
-          <p>Editar</p>
-        </Link>
-        <Link to={"../EnsinoRemoto"} className="Editar btn btn-primary-e ">
-          <p>Sair</p>
-        </Link>
+            <Link to={""} className="Editar btn btn-primary-e ">
+              <p>Editar</p>
+            </Link>
+            <Link to={"../EnsinoRemoto"} className="Editar btn btn-primary-e ">
+              <p>Sair</p>
+            </Link>
           </div>
         </div>
       </div>
