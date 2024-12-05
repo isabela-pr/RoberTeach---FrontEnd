@@ -2,11 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 
+<<<<<<< HEAD
 /* Estilos gerais */
 body {
   background-color: #f9f9f9; /* Fundo claro */
   font-family: "Roboto", sans-serif; /* Fonte limpa */
   color: #333; /* Texto escuro */
+=======
+
+.Robertofalando {
+  height: 50vh;
+>>>>>>> origin/Karol
 }
 
 .cardQuestion {
@@ -155,7 +161,85 @@ body {
   border-radius: 1em;
 }
 
+<<<<<<< HEAD
 .progress {
   background-color: #48455f !important;
   border-radius: 1em !important;
+=======
+.remember-me input {
+  margin-right: 5px;
+}
+
+:root {
+  --bgColor: white;
+  --ColorBtn: white;
+  --FalaRob: white;
+  --FalaRobP: #000;
+  --entrarContaP: #fff;
+  --bgCriarConta: #e5e5e5;
+  --criarContaStroke: #d2d2d2;
+  --loginForm: #fff;
+  --label: #000;
+  --bgInput: #f5e6ff;
+  --btnColorC: #fff;
+  --icons: #000;
+  --falaR: #000;
+  --caixaFala: #616161;
+  --infoB: #e3e3e3;
+  --falaP: #000;
+  --btnProsseguir: #fff;
+  --aprender: rgba(0, 0, 0, 0.29);
+  --customBtnBg: #fff;
+  --customBorder: #e0e0e0;
+  --customColor: black;
+  --customShadow: rgba(0, 0, 0, 0.15);
+  --colorText: #333;
+  --textColorER: #000;
+  --textColorEI: #000;
+  --bgAreaMat: #fff;
+  --borderAreaMat: #d9d9d9;
+  --textItem: #000;
+  --itemSelect: #f0e6ff;
+  --colorBtnP: #fff;
+  --colorBgP: #e0e0e0;
+  --selecione: black
+}
+
+@media (prefers-color-scheme= dark) {
+  :root {
+    --bgColor: #151323;
+    --ColorBtn: black;
+    --FalaRob: #151323;
+    --FalaRobP: #fff;
+    --entrarContaP: #000;
+    --bgCriarConta: #6b6a72;
+    --criarContaStroke: #404040;
+    --loginForm: #151323;
+    --label: #fff;
+    --bgInput: #3a294f;
+    --btnColorC: #151323;
+    --icons: #fff;
+    --falaR: #fff;
+    --caixaFala: #404040;
+    --infoB: #404040;
+    --falaP: #fff;
+    --btnProsseguir: #000;
+    --aprender: #fff;
+    --customBtnBg: #151323;
+    --customBorder: #2b2a37;
+    --customColor: white;
+    --customShadow: rgba(43, 42, 55, 1);
+    --colorText: #fff;
+    --textColorER: #fff;
+    --textColorEI: #fff;
+    --bgAreaMat: #151323;
+    --borderAreaMat: #2b2a37;
+    --textItem: #fff;
+    --itemSelect: #392260;
+    --colorBtnP: #37464F;
+    --colorBgP: #262431;
+    --selecione: white
+
+  }
+>>>>>>> origin/Karol
 }

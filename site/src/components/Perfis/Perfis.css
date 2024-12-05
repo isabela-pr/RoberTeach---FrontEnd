@@ -1,0 +1,38 @@
+.linha {
+  margin-top: -0.5em;
+}
+
+p{
+  color:var(--selecione);
+}
+h6 {
+  font-family: Itim;
+  text-align: center;
+  margin-top: 1em;
+  color:var(--selecione);
+  align-items: center;
+  justify-content: center;
+
+}
+
+.localPerfil{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+  margin-top: 4em;
+}
+
+.Editar{
+  color: var(--entrarContaP);
+}
+
+.botoes{
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  gap: 1em;
+  margin-top: 2em;
+  
+}
