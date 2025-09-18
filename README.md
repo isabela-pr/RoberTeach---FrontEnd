@@ -17,18 +17,7 @@ Projeto desenvolvido por alunos do SENAI Jaú. <br/>
   <a href="#memo-licença">Licença</a>
 </p>
 
-<<<<<<< HEAD
 
-
-
-<br>
-
-
-
-=======
-<br>
-
->>>>>>> Bela
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
